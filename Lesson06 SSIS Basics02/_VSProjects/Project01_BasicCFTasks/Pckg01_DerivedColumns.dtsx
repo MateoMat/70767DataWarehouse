@@ -1,0 +1,691 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/13/2018 10:07:17 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ITK"
+  DTS:CreatorName="ITK\tomek"
+  DTS:DTSID="{56F6C1C1-D777-412C-98A1-ADA455F43E6F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Pckg01_DerivedColumns"
+  DTS:PackageType="5"
+  DTS:VersionBuild="12"
+  DTS:VersionGUID="{0623814C-69FE-4F00-BFCF-DE1F2FF6365D}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFT - Load FF Products"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{88B23B02-1E1F-46D1-B492-EE0E17411136}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFT - Load FF Products"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFT - Load FF Products\Derived Column"
+              componentClassID="Microsoft.DerivedColumn"
+              contactInfo="Derived Column;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;0"
+              description="Creates new column values by applying expressions to transformation input columns. Create new columns or overwrite existing ones. For example, concatenate the values from the 'first name' and 'last name' column to make a 'full name' column."
+              name="Derived Column"
+              usesDispositions="true">
+              <inputs>
+                <input
+                  refId="Package\DFT - Load FF Products\Derived Column.Inputs[Derived Column Input]"
+                  description="Input to the Derived Column Transformation"
+                  name="Derived Column Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Inputs[Derived Column Input].Columns[Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Name"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      truncationRowDisposition="FailComponent"
+                      usageType="readWrite">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Nazwa " + #{Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Name]}</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Nazwa " + Name</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output]"
+                  description="Default Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  name="Derived Column Output"
+                  synchronousInputId="Package\DFT - Load FF Products\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_Tekst]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="5"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_Tekst]"
+                      name="DrvCol_Tekst"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">"Tekst"</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">"Tekst"</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_LoadDate]"
+                      dataType="date"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_LoadDate]"
+                      name="DrvCol_LoadDate"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[System::StartTime]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[System::StartTime]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_PckgId]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="38"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_PckgId]"
+                      name="DrvCol_PckgId"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[System::PackageID]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[System::PackageID]</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_MachName]"
+                      dataType="wstr"
+                      errorOrTruncationOperation="Computation"
+                      errorRowDisposition="FailComponent"
+                      length="3"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_MachName]"
+                      name="DrvCol_MachName"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Expression"
+                          name="Expression">@[System::MachineName]</property>
+                        <property
+                          containsID="true"
+                          dataType="System.String"
+                          description="Derived Column Friendly Expression"
+                          expressionType="Notify"
+                          name="FriendlyExpression">@[System::MachineName]</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+                <output
+                  refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Error Output]"
+                  description="Error Output of the Derived Column Transformation"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="Derived Column Error Output"
+                  synchronousInputId="Package\DFT - Load FF Products\Derived Column.Inputs[Derived Column Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load FF Products\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load FF Products\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="{13D81AA1-00DB-4464-83D5-430AA7EE6DB4}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[Products_HeaderCSV]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[SystemID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SystemID]"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[SystemID]"
+                      name="SystemID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BusinessID]"
+                      length="3"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[BusinessID]"
+                      name="BusinessID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Desc]"
+                      length="200"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Desc]"
+                      name="Desc"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SystemID]"
+                      dataType="i4"
+                      name="SystemID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="BusinessID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      name="Desc" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFT - Load FF Products\SQL Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="SQL Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Pckg01_DerivedCols]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFT - Load FF Products\SQL Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4E98C091-6F34-41BA-AE13-A9019FDEF39C}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[ITK_DV16.SSISExmpl]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[SystemID]"
+                      cachedDataType="i4"
+                      cachedName="SystemID"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[SystemID]"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[SystemID]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[BusinessID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="BusinessID"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[BusinessID]"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[BusinessID]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Name"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[Desc]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Desc"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[Desc]"
+                      lineageId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output].Columns[Desc]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[DrvCol_Tekst]"
+                      cachedDataType="wstr"
+                      cachedLength="5"
+                      cachedName="DrvCol_Tekst"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_Tekst]"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_Tekst]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[DrvCol_LoadDate]"
+                      cachedDataType="date"
+                      cachedName="DrvCol_LoadDate"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_LoadDate]"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_LoadDate]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[DrvCol_PckgId]"
+                      cachedDataType="wstr"
+                      cachedLength="38"
+                      cachedName="DrvCol_PckgId"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_PckgId]"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_PckgId]" />
+                    <inputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].Columns[DrvCol_MachName]"
+                      cachedDataType="wstr"
+                      cachedLength="3"
+                      cachedName="DrvCol_MachName"
+                      externalMetadataColumnId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_MachName]"
+                      lineageId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output].Columns[DrvCol_MachName]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[SystemID]"
+                      dataType="i4"
+                      name="SystemID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="BusinessID" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      name="Desc" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_Tekst]"
+                      dataType="wstr"
+                      length="5"
+                      name="DrvCol_Tekst" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_LoadDate]"
+                      dataType="dbTimeStamp"
+                      name="DrvCol_LoadDate" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_PckgId]"
+                      dataType="wstr"
+                      length="38"
+                      name="DrvCol_PckgId" />
+                    <externalMetadataColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input].ExternalColumns[DrvCol_MachName]"
+                      dataType="wstr"
+                      length="3"
+                      name="DrvCol_MachName" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFT - Load FF Products\SQL Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\SQL Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFT - Load FF Products\SQL Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFT - Load FF Products\SQL Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFT - Load FF Products.Paths[Derived Column Output]"
+              endId="Package\DFT - Load FF Products\SQL Destination.Inputs[OLE DB Destination Input]"
+              name="Derived Column Output"
+              startId="Package\DFT - Load FF Products\Derived Column.Outputs[Derived Column Output]" />
+            <path
+              refId="Package\DFT - Load FF Products.Paths[Flat File Source Output]"
+              endId="Package\DFT - Load FF Products\Derived Column.Inputs[Derived Column Input]"
+              name="Flat File Source Output"
+              startId="Package\DFT - Load FF Products\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="190,42"
+          Id="Package\DFT - Load FF Products"
+          TopLeft="109,49" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFT - Load FF Products">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="8" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="154,42"
+          Id="Package\DFT - Load FF Products\SQL Destination"
+          TopLeft="162,239" />
+        <NodeLayout
+          Size="151,42"
+          Id="Package\DFT - Load FF Products\Flat File Source"
+          TopLeft="165,36" />
+        <NodeLayout
+          Size="154,42"
+          Id="Package\DFT - Load FF Products\Derived Column"
+          TopLeft="164,134" />
+        <EdgeLayout
+          Id="Package\DFT - Load FF Products.Paths[Flat File Source Output]"
+          TopLeft="240.75,78">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,56"
+              Start="0,0"
+              End="0,48.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,48.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\DFT - Load FF Products.Paths[Derived Column Output]"
+          TopLeft="240,176">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,63"
+              Start="0,0"
+              End="0,55.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,55.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFT - Load FF Products\SQL Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

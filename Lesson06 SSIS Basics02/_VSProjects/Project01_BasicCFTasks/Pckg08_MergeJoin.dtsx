@@ -1,0 +1,1319 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="1/13/2018 10:07:17 AM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ITK"
+  DTS:CreatorName="ITK\tomek"
+  DTS:DTSID="{BFD95073-CB55-4778-BE2C-7F73B5D25B09}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Pckg08_MergeJoin"
+  DTS:PackageType="5"
+  DTS:VersionBuild="47"
+  DTS:VersionGUID="{7D7F0E2E-8446-4C99-8168-4EEB73C30E23}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\Execute SQL Task"
+      DTS:CreationName="Microsoft.ExecuteSQLTask"
+      DTS:Description="Execute SQL Task"
+      DTS:DTSID="{F08E1A80-B825-49EA-B39A-4B8E89DE6CEC}"
+      DTS:ExecutableType="Microsoft.ExecuteSQLTask"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="Execute SQL Task"
+      DTS:TaskContact="Execute SQL Task; Microsoft Corporation; SQL Server 2016; © 2015 Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1"
+      DTS:ThreadHint="0">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <SQLTask:SqlTaskData
+          SQLTask:Connection="{4E98C091-6F34-41BA-AE13-A9019FDEF39C}"
+          SQLTask:SqlStatementSource="TRUNCATE TABLE [Pckg08_MergeJoin]&#xA;;" xmlns:SQLTask="www.microsoft.com/sqlserver/dts/tasks/sqltask" />
+      </DTS:ObjectData>
+    </DTS:Executable>
+    <DTS:Executable
+      DTS:refId="Package\MergeJoin"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{1D4F9323-7785-4FA4-890C-A125BF770B56}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="MergeJoin"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\MergeJoin\Merge Join"
+              componentClassID="Microsoft.MergeJoin"
+              contactInfo="Merge Join;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Combine two sorted data flows into one using the FULL, LEFT, or INNER join. We recommend this transformation when data flows can be sorted at their sources."
+              name="Merge Join"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the type of join to perform."
+                  name="JoinType"
+                  typeConverter="JoinType">2</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the number of columns in the ordering key."
+                  name="NumKeyColumns">1</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the null values are treated as equal values."
+                  name="TreatNullsAsEqual">true</property>
+                <property
+                  dataType="System.Int32"
+                  description="Indicates the requested maximum buffers per input before blocking."
+                  name="MaxBuffersPerInput">5</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Left Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[BusinessID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="BusinessID"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[BusinessID]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[SystemID]"
+                      cachedDataType="i4"
+                      cachedName="SystemID"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[SystemID]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Name"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Name]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[Desc]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Desc"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Desc]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+                <input
+                  refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input]"
+                  hasSideEffects="true"
+                  name="Merge Join Right Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[Product_Id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Product_Id"
+                      cachedSortKeyPosition="1"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Product_Id]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[System_Id]"
+                      cachedDataType="i4"
+                      cachedName="System_Id"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[System_Id]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[Price]"
+                      cachedDataType="r4"
+                      cachedName="Price"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Price]" />
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output]"
+                  isSorted="true"
+                  name="Merge Join Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_SystemID]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_SystemID]"
+                      name="Left_SystemID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[SystemID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_BusinessID]"
+                      name="Left_BusinessID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[BusinessID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Name]"
+                      name="Left_Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Desc]"
+                      name="Left_Desc">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input].Columns[Desc]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_System_Id]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_System_Id]"
+                      name="Right_System_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[System_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Product_Id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Product_Id]"
+                      name="Right_Product_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[Product_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Price]"
+                      dataType="r4"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Price]"
+                      name="Right_Price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="The input column associated with this output column"
+                          name="InputColumnID">#{Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input].Columns[Price]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MergeJoin\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[Pckg08_MergeJoin]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MergeJoin\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{4E98C091-6F34-41BA-AE13-A9019FDEF39C}:invalid"
+                  connectionManagerRefId="{4E98C091-6F34-41BA-AE13-A9019FDEF39C}:invalid"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Left_SystemID]"
+                      cachedDataType="i4"
+                      cachedName="Left_SystemID"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_SystemID]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_SystemID]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Left_BusinessID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Left_BusinessID"
+                      cachedSortKeyPosition="1"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_BusinessID]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_BusinessID]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Left_Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Left_Name"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_Name]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Name]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Left_Desc]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Left_Desc"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_Desc]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Left_Desc]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Right_System_Id]"
+                      cachedDataType="i4"
+                      cachedName="Right_System_Id"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_System_Id]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_System_Id]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Right_Product_Id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Right_Product_Id"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_Product_Id]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Product_Id]" />
+                    <inputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[Right_Price]"
+                      cachedDataType="r4"
+                      cachedName="Right_Price"
+                      externalMetadataColumnId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_Price]"
+                      lineageId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output].Columns[Right_Price]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_SystemID]"
+                      dataType="i4"
+                      name="Left_SystemID" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="Left_BusinessID" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Left_Name" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Left_Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      name="Left_Desc" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_System_Id]"
+                      dataType="i4"
+                      name="Right_System_Id" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_Product_Id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="Right_Product_Id" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[Right_Price]"
+                      dataType="r4"
+                      name="Right_Price" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MergeJoin\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MergeJoin\Prices"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Prices"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MergeJoin\Prices.Connections[FlatFileConnection]"
+                  connectionManagerID="{CEF3E0F6-389D-4027-BDC1-4C32CF73E951}:invalid"
+                  connectionManagerRefId="{CEF3E0F6-389D-4027-BDC1-4C32CF73E951}:invalid"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[System_Id]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[System_Id]"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[System_Id]"
+                      name="System_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Product_Id]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[Product_Id]"
+                      length="3"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Product_Id]"
+                      name="Product_Id"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Price]"
+                      dataType="r4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[Price]"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Price]"
+                      name="Price"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[System_Id]"
+                      dataType="i4"
+                      name="System_Id" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[Product_Id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="Product_Id" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].ExternalColumns[Price]"
+                      dataType="r4"
+                      name="Price" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MergeJoin\Products"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Products"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\MergeJoin\Products.Connections[FlatFileConnection]"
+                  connectionManagerID="{13D81AA1-00DB-4464-83D5-430AA7EE6DB4}:invalid"
+                  connectionManagerRefId="{13D81AA1-00DB-4464-83D5-430AA7EE6DB4}:invalid"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\Products.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[SystemID]"
+                      dataType="i4"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[SystemID]"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[SystemID]"
+                      name="SystemID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[BusinessID]"
+                      length="3"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[BusinessID]"
+                      name="BusinessID"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      length="50"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Name]"
+                      name="Name"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[Desc]"
+                      length="200"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Desc]"
+                      name="Desc"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[SystemID]"
+                      dataType="i4"
+                      name="SystemID" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      name="BusinessID" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="Name" />
+                    <externalMetadataColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Output].ExternalColumns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      name="Desc" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MergeJoin\Sort Price"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort Price"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\MergeJoin\Sort Price.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Price.Inputs[Sort Input].Columns[System_Id]"
+                      cachedDataType="i4"
+                      cachedName="System_Id"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[System_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Price.Inputs[Sort Input].Columns[Product_Id]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="Product_Id"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Product_Id]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Price.Inputs[Sort Input].Columns[Price]"
+                      cachedDataType="r4"
+                      cachedName="Price"
+                      lineageId="Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Price]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\Sort Price.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[System_Id]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[System_Id]"
+                      name="System_Id">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[System_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Product_Id]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Product_Id]"
+                      name="Product_Id"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Product_Id]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Price]"
+                      dataType="r4"
+                      lineageId="Package\MergeJoin\Sort Price.Outputs[Sort Output].Columns[Price]"
+                      name="Price">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Prices.Outputs[Flat File Source Output].Columns[Price]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\MergeJoin\Sort Product"
+              componentClassID="Microsoft.Sort"
+              contactInfo="Sort;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Sorts input data in ascending or descending order when it cannot be sorted at its source. For example, sort sales data by 'customer id' before it is written to a flat file and delivered to another department. Note: We do not recommend this transformation for large data flows."
+              name="Sort Product"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the Sort transformation removes rows with duplicate sort values."
+                  name="EliminateDuplicates">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the maximum number of threads to use for sorting."
+                  expressionType="Notify"
+                  name="MaximumThreads">-1</property>
+              </properties>
+              <inputs>
+                <input
+                  refId="Package\MergeJoin\Sort Product.Inputs[Sort Input]"
+                  name="Sort Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Product.Inputs[Sort Input].Columns[SystemID]"
+                      cachedDataType="i4"
+                      cachedName="SystemID"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[SystemID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Product.Inputs[Sort Input].Columns[BusinessID]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="3"
+                      cachedName="BusinessID"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[BusinessID]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">1</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Product.Inputs[Sort Input].Columns[Name]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="Name"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Name]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                    <inputColumn
+                      refId="Package\MergeJoin\Sort Product.Inputs[Sort Input].Columns[Desc]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="200"
+                      cachedName="Desc"
+                      lineageId="Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Desc]">
+                      <properties>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the comparison options for character data."
+                          name="NewComparisonFlags">0</property>
+                        <property
+                          dataType="System.Int32"
+                          description="Specifies the sort order of the column."
+                          name="NewSortKeyPosition">0</property>
+                      </properties>
+                    </inputColumn>
+                  </inputColumns>
+                  <externalMetadataColumns />
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\MergeJoin\Sort Product.Outputs[Sort Output]"
+                  isSorted="true"
+                  name="Sort Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[SystemID]"
+                      dataType="i4"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[SystemID]"
+                      name="SystemID">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[SystemID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[BusinessID]"
+                      codePage="1250"
+                      dataType="str"
+                      length="3"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[BusinessID]"
+                      name="BusinessID"
+                      sortKeyPosition="1">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[BusinessID]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Name]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Name]"
+                      name="Name">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Name]}</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Desc]"
+                      codePage="1250"
+                      dataType="str"
+                      length="200"
+                      lineageId="Package\MergeJoin\Sort Product.Outputs[Sort Output].Columns[Desc]"
+                      name="Desc">
+                      <properties>
+                        <property
+                          containsID="true"
+                          dataType="System.Int32"
+                          description="Specifies the lineage identifier of the input column that is associated with this output column."
+                          name="SortColumnId">#{Package\MergeJoin\Products.Outputs[Flat File Source Output].Columns[Desc]}</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\MergeJoin.Paths[Flat File Source Output]"
+              endId="Package\MergeJoin\Sort Product.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\MergeJoin\Products.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\MergeJoin.Paths[Flat File Source Output1]"
+              endId="Package\MergeJoin\Sort Price.Inputs[Sort Input]"
+              name="Flat File Source Output"
+              startId="Package\MergeJoin\Prices.Outputs[Flat File Source Output]" />
+            <path
+              refId="Package\MergeJoin.Paths[Merge Join Output]"
+              endId="Package\MergeJoin\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Merge Join Output"
+              startId="Package\MergeJoin\Merge Join.Outputs[Merge Join Output]" />
+            <path
+              refId="Package\MergeJoin.Paths[Sort Output]"
+              endId="Package\MergeJoin\Merge Join.Inputs[Merge Join Left Input]"
+              name="Sort Output"
+              startId="Package\MergeJoin\Sort Product.Outputs[Sort Output]" />
+            <path
+              refId="Package\MergeJoin.Paths[Sort Output1]"
+              endId="Package\MergeJoin\Merge Join.Inputs[Merge Join Right Input]"
+              name="Sort Output"
+              startId="Package\MergeJoin\Sort Price.Outputs[Sort Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:PrecedenceConstraints>
+    <DTS:PrecedenceConstraint
+      DTS:refId="Package.PrecedenceConstraints[Constraint]"
+      DTS:CreationName=""
+      DTS:DTSID="{E8AA9BE7-82E5-4A0D-B6A8-12D42B367820}"
+      DTS:From="Package\Execute SQL Task"
+      DTS:LogicalAnd="True"
+      DTS:ObjectName="Constraint"
+      DTS:To="Package\MergeJoin" />
+  </DTS:PrecedenceConstraints>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="127,42"
+          Id="Package\MergeJoin"
+          TopLeft="134,110" />
+        <NodeLayout
+          Size="163,42"
+          Id="Package\Execute SQL Task"
+          TopLeft="118,23" />
+        <EdgeLayout
+          Id="Package.PrecedenceConstraints[Constraint]"
+          TopLeft="198.5,65">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,45"
+              Start="0,0"
+              End="0,37.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,37.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\MergeJoin">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="16" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="120,42"
+          Id="Package\MergeJoin\Products"
+          TopLeft="60,60" />
+        <NodeLayout
+          Size="106,42"
+          Id="Package\MergeJoin\Prices"
+          TopLeft="243,55" />
+        <NodeLayout
+          Size="137,42"
+          Id="Package\MergeJoin\Sort Product"
+          TopLeft="52,162" />
+        <NodeLayout
+          Size="124,42"
+          Id="Package\MergeJoin\Sort Price"
+          TopLeft="240,161" />
+        <EdgeLayout
+          Id="Package\MergeJoin.Paths[Flat File Source Output]"
+          TopLeft="120.25,102">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,60"
+              Start="0,0"
+              End="0,52.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,52.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MergeJoin.Paths[Flat File Source Output1]"
+          TopLeft="299,97">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,64"
+              Start="0,0"
+              End="0,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="130,42"
+          Id="Package\MergeJoin\Merge Join"
+          TopLeft="138,268" />
+        <EdgeLayout
+          Id="Package\MergeJoin.Paths[Sort Output]"
+          TopLeft="120.5,204">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="82.5,64"
+              Start="0,0"
+              End="82.5,56.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,28" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,28"
+                    Point2="0,32"
+                    Point3="4,32" />
+                  <mssgle:LineSegment
+                    End="78.5,32" />
+                  <mssgle:CubicBezierSegment
+                    Point1="78.5,32"
+                    Point2="82.5,32"
+                    Point3="82.5,36" />
+                  <mssgle:LineSegment
+                    End="82.5,56.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <EdgeLayout
+          Id="Package\MergeJoin.Paths[Sort Output1]"
+          TopLeft="302,203">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="-78.6666666666667,65"
+              Start="0,0"
+              End="-78.6666666666667,57.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,34.5258358662614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,34.5258358662614"
+                    Point2="0,38.5258358662614"
+                    Point3="-4,38.5258358662614" />
+                  <mssgle:LineSegment
+                    End="-74.6666666666667,38.5258358662614" />
+                  <mssgle:CubicBezierSegment
+                    Point1="-74.6666666666667,38.5258358662614"
+                    Point2="-78.6666666666667,38.5258358662614"
+                    Point3="-78.6666666666667,42.5258358662614" />
+                  <mssgle:LineSegment
+                    End="-78.6666666666667,57.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+        <NodeLayout
+          Size="171,42"
+          Id="Package\MergeJoin\OLE DB Destination"
+          TopLeft="120,411" />
+        <EdgeLayout
+          Id="Package\MergeJoin.Paths[Merge Join Output]"
+          TopLeft="204.25,310">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="0,101"
+              Start="0,0"
+              End="0,93.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,93.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\MergeJoin\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project01_VariablesAndOtherTasks", "Project01_VariablesAndOtherTasks\Project01_VariablesAndOtherTasks.dtproj", "{37BF5B55-F81C-441D-B43A-95524691C060}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project02_SCDType2", "Project02_SCDType2\Project02_SCDType2.dtproj", "{BFEF5939-2722-4EA8-8522-4B58EEEDB54F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{37BF5B55-F81C-441D-B43A-95524691C060}.Development|Default.ActiveCfg = Development
+		{37BF5B55-F81C-441D-B43A-95524691C060}.Development|Default.Build.0 = Development
+		{BFEF5939-2722-4EA8-8522-4B58EEEDB54F}.Development|Default.ActiveCfg = Development
+		{BFEF5939-2722-4EA8-8522-4B58EEEDB54F}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B3CC13E-D998-4C84-9B82-EA72A93F6842}
+	EndGlobalSection
+EndGlobal

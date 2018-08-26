@@ -1,0 +1,212 @@
+ProductID;Name;ProductNumber;Color;StandardCost;ListPrice;ProductLine;Class;Style;ProductSubcategoryID;ProductModelID
+-999;HL Road Frame - Black, 58;FR-R92B-58;Black;1059,31;1431,5;R ;H ;U ;14;6
+-1000;HL Road Frame - Red, 58;FR-R92R-58;Red;1059,31;1431,5;R ;H ;U ;14;6
+-1001;Mountain Bike Socks, M;SO-B909-M;White;3,3963;9,5;M ;NULL;U ;23;18
+-1002;Mountain Bike Socks, L;SO-B909-L;White;3,3963;9,5;M ;NULL;U ;23;18
+713;Long-Sleeve Logo Jersey, S;LJ-0192-S;Multi;38,4923;49,99;S ;NULL;U ;21;11
+714;Long-Sleeve Logo Jersey, M;LJ-0192-M;Multi;38,4923;49,99;S ;NULL;U ;21;11
+715;Long-Sleeve Logo Jersey, L;LJ-0192-L;Multi;38,4923;49,99;S ;NULL;U ;21;11
+716;Long-Sleeve Logo Jersey, XL;LJ-0192-X;Multi;38,4923;49,99;S ;NULL;U ;21;11
+717;HL Road Frame - Red, 62;FR-R92R-62;Red;868,6342;1431,5;R ;H ;U ;14;6
+718;HL Road Frame - Red, 44;FR-R92R-44;Red;868,6342;1431,5;R ;H ;U ;14;6
+719;HL Road Frame - Red, 48;FR-R92R-48;Red;868,6342;1431,5;R ;H ;U ;14;6
+720;HL Road Frame - Red, 52;FR-R92R-52;Red;868,6342;1431,5;R ;H ;U ;14;6
+721;HL Road Frame - Red, 56;FR-R92R-56;Red;868,6342;1431,5;R ;H ;U ;14;6
+722;LL Road Frame - Black, 58;FR-R38B-58;Black;204,6251;337,22;R ;L ;U ;14;9
+723;LL Road Frame - Black, 60;FR-R38B-60;Black;204,6251;337,22;R ;L ;U ;14;9
+724;LL Road Frame - Black, 62;FR-R38B-62;Black;204,6251;337,22;R ;L ;U ;14;9
+725;LL Road Frame - Red, 44;FR-R38R-44;Red;187,1571;337,22;R ;L ;U ;14;9
+726;LL Road Frame - Red, 48;FR-R38R-48;Red;187,1571;337,22;R ;L ;U ;14;9
+727;LL Road Frame - Red, 52;FR-R38R-52;Red;187,1571;337,22;R ;L ;U ;14;9
+728;LL Road Frame - Red, 58;FR-R38R-58;Red;187,1571;337,22;R ;L ;U ;14;9
+729;LL Road Frame - Red, 60;FR-R38R-60;Red;187,1571;337,22;R ;L ;U ;14;9
+730;LL Road Frame - Red, 62;FR-R38R-62;Red;187,1571;337,22;R ;L ;U ;14;9
+731;ML Road Frame - Red, 44;FR-R72R-44;Red;352,1394;594,83;R ;M ;U ;14;16
+732;ML Road Frame - Red, 48;FR-R72R-48;Red;352,1394;594,83;R ;M ;U ;14;16
+733;ML Road Frame - Red, 52;FR-R72R-52;Red;352,1394;594,83;R ;M ;U ;14;16
+734;ML Road Frame - Red, 58;FR-R72R-58;Red;352,1394;594,83;R ;M ;U ;14;16
+735;ML Road Frame - Red, 60;FR-R72R-60;Red;352,1394;594,83;R ;M ;U ;14;16
+736;LL Road Frame - Black, 44;FR-R38B-44;Black;204,6251;337,22;R ;L ;U ;14;9
+737;LL Road Frame - Black, 48;FR-R38B-48;Black;204,6251;337,22;R ;L ;U ;14;9
+738;LL Road Frame - Black, 52;FR-R38B-52;Black;204,6251;337,22;R ;L ;U ;14;9
+739;HL Mountain Frame - Silver, 42;FR-M94S-42;Silver;747,2002;1364,5;M ;H ;U ;12;5
+740;HL Mountain Frame - Silver, 44;FR-M94S-44;Silver;706,811;1364,5;M ;H ;U ;12;5
+741;HL Mountain Frame - Silver, 48;FR-M94S-52;Silver;706,811;1364,5;M ;H ;U ;12;5
+742;HL Mountain Frame - Silver, 46;FR-M94S-46;Silver;747,2002;1364,5;M ;H ;U ;12;5
+743;HL Mountain Frame - Black, 42;FR-M94B-42;Black;739,041;1349,6;M ;H ;U ;12;5
+744;HL Mountain Frame - Black, 44;FR-M94B-44;Black;699,0928;1349,6;M ;H ;U ;12;5
+745;HL Mountain Frame - Black, 48;FR-M94B-48;Black;699,0928;1349,6;M ;H ;U ;12;5
+746;HL Mountain Frame - Black, 46;FR-M94B-46;Black;739,041;1349,6;M ;H ;U ;12;5
+747;HL Mountain Frame - Black, 38;FR-M94B-38;Black;739,041;1349,6;M ;H ;U ;12;5
+748;HL Mountain Frame - Silver, 38;FR-M94S-38;Silver;747,2002;1364,5;M ;H ;U ;12;5
+749;Road-150 Red, 62;BK-R93R-62;Red;2171,2942;3578,27;R ;H ;U ;2;25
+750;Road-150 Red, 44;BK-R93R-44;Red;2171,2942;3578,27;R ;H ;U ;2;25
+751;Road-150 Red, 48;BK-R93R-48;Red;2171,2942;3578,27;R ;H ;U ;2;25
+752;Road-150 Red, 52;BK-R93R-52;Red;2171,2942;3578,27;R ;H ;U ;2;25
+753;Road-150 Red, 56;BK-R93R-56;Red;2171,2942;3578,27;R ;H ;U ;2;25
+754;Road-450 Red, 58;BK-R68R-58;Red;884,7083;1457,99;R ;M ;U ;2;28
+755;Road-450 Red, 60;BK-R68R-60;Red;884,7083;1457,99;R ;M ;U ;2;28
+756;Road-450 Red, 44;BK-R68R-44;Red;884,7083;1457,99;R ;M ;U ;2;28
+757;Road-450 Red, 48;BK-R68R-48;Red;884,7083;1457,99;R ;M ;U ;2;28
+758;Road-450 Red, 52;BK-R68R-52;Red;884,7083;1457,99;R ;M ;U ;2;28
+759;Road-650 Red, 58;BK-R50R-58;Red;486,7066;782,99;R ;L ;U ;2;30
+760;Road-650 Red, 60;BK-R50R-60;Red;486,7066;782,99;R ;L ;U ;2;30
+761;Road-650 Red, 62;BK-R50R-62;Red;486,7066;782,99;R ;L ;U ;2;30
+762;Road-650 Red, 44;BK-R50R-44;Red;486,7066;782,99;R ;L ;U ;2;30
+763;Road-650 Red, 48;BK-R50R-48;Red;486,7066;782,99;R ;L ;U ;2;30
+764;Road-650 Red, 52;BK-R50R-52;Red;486,7066;782,99;R ;L ;U ;2;30
+765;Road-650 Black, 58;BK-R50B-58;Black;486,7066;782,99;R ;L ;U ;2;30
+766;Road-650 Black, 60;BK-R50B-60;Black;486,7066;782,99;R ;L ;U ;2;30
+767;Road-650 Black, 62;BK-R50B-62;Black;486,7066;782,99;R ;L ;U ;2;30
+768;Road-650 Black, 44;BK-R50B-44;Black;486,7066;782,99;R ;L ;U ;2;30
+769;Road-650 Black, 48;BK-R50B-48;Black;486,7066;782,99;R ;L ;U ;2;30
+770;Road-650 Black, 52;BK-R50B-52;Black;486,7066;782,99;R ;L ;U ;2;30
+771;Mountain-100 Silver, 38;BK-M82S-38;Silver;1912,1544;3399,99;M ;H ;U ;1;19
+772;Mountain-100 Silver, 42;BK-M82S-42;Silver;1912,1544;3399,99;M ;H ;U ;1;19
+773;Mountain-100 Silver, 44;BK-M82S-44;Silver;1912,1544;3399,99;M ;H ;U ;1;19
+774;Mountain-100 Silver, 48;BK-M82S-48;Silver;1912,1544;3399,99;M ;H ;U ;1;19
+775;Mountain-100 Black, 38;BK-M82B-38;Black;1898,0944;3374,99;M ;H ;U ;1;19
+776;Mountain-100 Black, 42;BK-M82B-42;Black;1898,0944;3374,99;M ;H ;U ;1;19
+777;Mountain-100 Black, 44;BK-M82B-44;Black;1898,0944;3374,99;M ;H ;U ;1;19
+778;Mountain-100 Black, 48;BK-M82B-48;Black;1898,0944;3374,99;M ;H ;U ;1;19
+779;Mountain-200 Silver, 38;BK-M68S-38;Silver;1265,6195;2319,99;M ;H ;U ;1;20
+780;Mountain-200 Silver, 42;BK-M68S-42;Silver;1265,6195;2319,99;M ;H ;U ;1;20
+781;Mountain-200 Silver, 46;BK-M68S-46;Silver;1265,6195;2319,99;M ;H ;U ;1;20
+782;Mountain-200 Black, 38;BK-M68B-38;Black;1251,9813;2294,99;M ;H ;U ;1;20
+783;Mountain-200 Black, 42;BK-M68B-42;Black;1251,9813;2294,99;M ;H ;U ;1;20
+784;Mountain-200 Black, 46;BK-M68B-46;Black;1251,9813;2294,99;M ;H ;U ;1;20
+785;Mountain-300 Black, 38;BK-M47B-38;Black;598,4354;1079,99;M ;M ;U ;1;21
+786;Mountain-300 Black, 40;BK-M47B-40;Black;598,4354;1079,99;M ;M ;U ;1;21
+787;Mountain-300 Black, 44;BK-M47B-44;Black;598,4354;1079,99;M ;M ;U ;1;21
+788;Mountain-300 Black, 48;BK-M47B-48;Black;598,4354;1079,99;M ;M ;U ;1;21
+789;Road-250 Red, 44;BK-R89R-44;Red;1518,7864;2443,35;R ;H ;U ;2;26
+790;Road-250 Red, 48;BK-R89R-48;Red;1518,7864;2443,35;R ;H ;U ;2;26
+791;Road-250 Red, 52;BK-R89R-52;Red;1518,7864;2443,35;R ;H ;U ;2;26
+792;Road-250 Red, 58;BK-R89R-58;Red;1554,9479;2443,35;R ;H ;U ;2;26
+793;Road-250 Black, 44;BK-R89B-44;Black;1554,9479;2443,35;R ;H ;U ;2;26
+794;Road-250 Black, 48;BK-R89B-48;Black;1554,9479;2443,35;R ;H ;U ;2;26
+795;Road-250 Black, 52;BK-R89B-52;Black;1554,9479;2443,35;R ;H ;U ;2;26
+796;Road-250 Black, 58;BK-R89B-58;Black;1554,9479;2443,35;R ;H ;U ;2;26
+797;Road-550-W Yellow, 38;BK-R64Y-38;Yellow;713,0798;1120,49;R ;M ;W ;2;29
+798;Road-550-W Yellow, 40;BK-R64Y-40;Yellow;713,0798;1120,49;R ;M ;W ;2;29
+799;Road-550-W Yellow, 42;BK-R64Y-42;Yellow;713,0798;1120,49;R ;M ;W ;2;29
+800;Road-550-W Yellow, 44;BK-R64Y-44;Yellow;713,0798;1120,49;R ;M ;W ;2;29
+801;Road-550-W Yellow, 48;BK-R64Y-48;Yellow;713,0798;1120,49;R ;M ;W ;2;29
+814;ML Mountain Frame - Black, 38;FR-M63B-38;Black;185,8193;348,76;M ;M ;U ;12;15
+822;ML Road Frame-W - Yellow, 38;FR-R72Y-38;Yellow;360,9428;594,83;R ;M ;W ;14;17
+830;ML Mountain Frame - Black, 40;FR-M63B-40;Black;185,8193;348,76;M ;M ;U ;12;14
+831;ML Mountain Frame - Black, 44;FR-M63B-44;Black;185,8193;348,76;M ;M ;U ;12;14
+832;ML Mountain Frame - Black, 48;FR-M63B-48;Black;185,8193;348,76;M ;M ;U ;12;14
+833;ML Road Frame-W - Yellow, 40;FR-R72Y-40;Yellow;360,9428;594,83;R ;M ;W ;14;17
+834;ML Road Frame-W - Yellow, 42;FR-R72Y-42;Yellow;360,9428;594,83;R ;M ;W ;14;17
+835;ML Road Frame-W - Yellow, 44;FR-R72Y-44;Yellow;360,9428;594,83;R ;M ;W ;14;17
+836;ML Road Frame-W - Yellow, 48;FR-R72Y-48;Yellow;360,9428;594,83;R ;M ;W ;14;17
+837;HL Road Frame - Black, 62;FR-R92B-62;Black;868,6342;1431,5;R ;H ;U ;14;6
+838;HL Road Frame - Black, 44;FR-R92B-44;Black;868,6342;1431,5;R ;H ;U ;14;6
+839;HL Road Frame - Black, 48;FR-R92B-48;Black;868,6342;1431,5;R ;H ;U ;14;6
+840;HL Road Frame - Black, 52;FR-R92B-52;Black;868,6342;1431,5;R ;H ;U ;14;6
+841;Men's Sports Shorts, S;SH-M897-S;Black;24,7459;59,99;S ;NULL;M ;22;13
+849;Men's Sports Shorts, M;SH-M897-M;Black;24,7459;59,99;S ;NULL;M ;22;13
+850;Men's Sports Shorts, L;SH-M897-L;Black;24,7459;59,99;S ;NULL;M ;22;13
+851;Men's Sports Shorts, XL;SH-M897-X;Black;24,7459;59,99;S ;NULL;M ;22;13
+852;Women's Tights, S;TG-W091-S;Black;30,9334;74,99;S ;NULL;W ;24;38
+853;Women's Tights, M;TG-W091-M;Black;30,9334;74,99;S ;NULL;W ;24;38
+854;Women's Tights, L;TG-W091-L;Black;30,9334;74,99;S ;NULL;W ;24;38
+855;Men's Bib-Shorts, S;SB-M891-S;Multi;37,1209;89,99;S ;NULL;M ;18;12
+856;Men's Bib-Shorts, M;SB-M891-M;Multi;37,1209;89,99;S ;NULL;M ;18;12
+857;Men's Bib-Shorts, L;SB-M891-L;Multi;37,1209;89,99;S ;NULL;M ;18;12
+858;Half-Finger Gloves, S;GL-H102-S;Black;9,1593;24,49;S ;NULL;U ;20;4
+859;Half-Finger Gloves, M;GL-H102-M;Black;9,1593;24,49;S ;NULL;U ;20;4
+860;Half-Finger Gloves, L;GL-H102-L;Black;9,1593;24,49;S ;NULL;U ;20;4
+861;Full-Finger Gloves, S;GL-F110-S;Black;15,6709;37,99;M ;NULL;U ;20;3
+862;Full-Finger Gloves, M;GL-F110-M;Black;15,6709;37,99;M ;NULL;U ;20;3
+863;Full-Finger Gloves, L;GL-F110-L;Black;15,6709;37,99;M ;NULL;U ;20;3
+864;Classic Vest, S;VE-C304-S;Blue;23,749;63,5;S ;NULL;U ;25;1
+865;Classic Vest, M;VE-C304-M;Blue;23,749;63,5;S ;NULL;U ;25;1
+866;Classic Vest, L;VE-C304-L;Blue;23,749;63,5;S ;NULL;U ;25;1
+867;Women's Mountain Shorts, S;SH-W890-S;Black;26,1763;69,99;M ;NULL;W ;22;37
+868;Women's Mountain Shorts, M;SH-W890-M;Black;26,1763;69,99;M ;NULL;W ;22;37
+869;Women's Mountain Shorts, L;SH-W890-L;Black;26,1763;69,99;M ;NULL;W ;22;37
+874;Racing Socks, M;SO-R809-M;White;3,3623;8,99;R ;NULL;U ;23;24
+875;Racing Socks, L;SO-R809-L;White;3,3623;8,99;R ;NULL;U ;23;24
+880;Hydration Pack - 70 oz.;HY-1023-70;Silver;20,5663;54,99;S ;NULL;NULL;32;107
+881;Short-Sleeve Classic Jersey, S;SJ-0194-S;Yellow;41,5723;53,99;S ;NULL;U ;21;32
+882;Short-Sleeve Classic Jersey, M;SJ-0194-M;Yellow;41,5723;53,99;S ;NULL;U ;21;32
+883;Short-Sleeve Classic Jersey, L;SJ-0194-L;Yellow;41,5723;53,99;S ;NULL;U ;21;32
+884;Short-Sleeve Classic Jersey, XL;SJ-0194-X;Yellow;41,5723;53,99;S ;NULL;U ;21;32
+885;HL Touring Frame - Yellow, 60;FR-T98Y-60;Yellow;601,7437;1003,91;T ;H ;U ;16;7
+886;LL Touring Frame - Yellow, 62;FR-T67Y-62;Yellow;199,8519;333,42;T ;L ;U ;16;10
+887;HL Touring Frame - Yellow, 46;FR-T98Y-46;Yellow;601,7437;1003,91;T ;H ;U ;16;7
+888;HL Touring Frame - Yellow, 50;FR-T98Y-50;Yellow;601,7437;1003,91;T ;H ;U ;16;7
+889;HL Touring Frame - Yellow, 54;FR-T98Y-54;Yellow;601,7437;1003,91;T ;H ;U ;16;7
+890;HL Touring Frame - Blue, 46;FR-T98U-46;Blue;601,7437;1003,91;T ;H ;U ;16;7
+891;HL Touring Frame - Blue, 50;FR-T98U-50;Blue;601,7437;1003,91;T ;H ;U ;16;7
+892;HL Touring Frame - Blue, 54;FR-T98U-54;Blue;601,7437;1003,91;T ;H ;U ;16;7
+893;HL Touring Frame - Blue, 60;FR-T98U-60;Blue;601,7437;1003,91;T ;H ;U ;16;7
+895;LL Touring Frame - Blue, 50;FR-T67U-50;Blue;199,8519;333,42;T ;L ;U ;16;10
+896;LL Touring Frame - Blue, 54;FR-T67U-54;Blue;199,8519;333,42;T ;L ;U ;16;10
+897;LL Touring Frame - Blue, 58;FR-T67U-58;Blue;199,8519;333,42;T ;L ;U ;16;10
+898;LL Touring Frame - Blue, 62;FR-T67U-62;Blue;199,8519;333,42;T ;L ;U ;16;10
+899;LL Touring Frame - Yellow, 44;FR-T67Y-44;Yellow;199,8519;333,42;T ;L ;U ;16;10
+900;LL Touring Frame - Yellow, 50;FR-T67Y-50;Yellow;199,8519;333,42;T ;L ;U ;16;10
+901;LL Touring Frame - Yellow, 54;FR-T67Y-54;Yellow;199,8519;333,42;T ;L ;U ;16;10
+902;LL Touring Frame - Yellow, 58;FR-T67Y-58;Yellow;199,8519;333,42;T ;L ;U ;16;10
+903;LL Touring Frame - Blue, 44;FR-T67U-44;Blue;199,8519;333,42;T ;L ;U ;16;10
+904;ML Mountain Frame-W - Silver, 40;FR-M63S-40;Silver;199,3757;364,09;M ;M ;W ;12;15
+905;ML Mountain Frame-W - Silver, 42;FR-M63S-42;Silver;199,3757;364,09;M ;M ;W ;12;15
+906;ML Mountain Frame-W - Silver, 46;FR-M63S-46;Silver;199,3757;364,09;M ;M ;W ;12;15
+917;LL Mountain Frame - Silver, 42;FR-M21S-42;Silver;144,5938;264,05;M ;L ;U ;12;8
+918;LL Mountain Frame - Silver, 44;FR-M21S-44;Silver;144,5938;264,05;M ;L ;U ;12;8
+919;LL Mountain Frame - Silver, 48;FR-M21S-48;Silver;144,5938;264,05;M ;L ;U ;12;8
+920;LL Mountain Frame - Silver, 52;FR-M21S-52;Silver;144,5938;264,05;M ;L ;U ;12;8
+924;LL Mountain Frame - Black, 42;FR-M21B-42;Black;136,785;249,79;M ;L ;U ;12;8
+925;LL Mountain Frame - Black, 44;FR-M21B-44;Black;136,785;249,79;M ;L ;U ;12;8
+926;LL Mountain Frame - Black, 48;FR-M21B-48;Black;136,785;249,79;M ;L ;U ;12;8
+927;LL Mountain Frame - Black, 52;FR-M21B-52;Black;136,785;249,79;M ;L ;U ;12;8
+942;ML Mountain Frame-W - Silver, 38;FR-M63S-38;Silver;199,3757;364,09;M ;M ;W ;12;15
+943;LL Mountain Frame - Black, 40;FR-M21B-40;Black;136,785;249,79;M ;L ;U ;12;8
+944;LL Mountain Frame - Silver, 40;FR-M21S-40;Silver;144,5938;264,05;M ;L ;U ;12;8
+953;Touring-2000 Blue, 60;BK-T44U-60;Blue;755,1508;1214,85;T ;M ;U ;3;35
+954;Touring-1000 Yellow, 46;BK-T79Y-46;Yellow;1481,9379;2384,07;T ;H ;U ;3;34
+955;Touring-1000 Yellow, 50;BK-T79Y-50;Yellow;1481,9379;2384,07;T ;H ;U ;3;34
+956;Touring-1000 Yellow, 54;BK-T79Y-54;Yellow;1481,9379;2384,07;T ;H ;U ;3;34
+957;Touring-1000 Yellow, 60;BK-T79Y-60;Yellow;1481,9379;2384,07;T ;H ;U ;3;34
+958;Touring-3000 Blue, 54;BK-T18U-54;Blue;461,4448;742,35;T ;L ;U ;3;36
+959;Touring-3000 Blue, 58;BK-T18U-58;Blue;461,4448;742,35;T ;L ;U ;3;36
+960;Touring-3000 Blue, 62;BK-T18U-62;Blue;461,4448;742,35;T ;L ;U ;3;36
+961;Touring-3000 Yellow, 44;BK-T18Y-44;Yellow;461,4448;742,35;T ;L ;U ;3;36
+962;Touring-3000 Yellow, 50;BK-T18Y-50;Yellow;461,4448;742,35;T ;L ;U ;3;36
+963;Touring-3000 Yellow, 54;BK-T18Y-54;Yellow;461,4448;742,35;T ;L ;U ;3;36
+964;Touring-3000 Yellow, 58;BK-T18Y-58;Yellow;461,4448;742,35;T ;L ;U ;3;36
+965;Touring-3000 Yellow, 62;BK-T18Y-62;Yellow;461,4448;742,35;T ;L ;U ;3;36
+966;Touring-1000 Blue, 46;BK-T79U-46;Blue;1481,9379;2384,07;T ;H ;U ;3;34
+967;Touring-1000 Blue, 50;BK-T79U-50;Blue;1481,9379;2384,07;T ;H ;U ;3;34
+968;Touring-1000 Blue, 54;BK-T79U-54;Blue;1481,9379;2384,07;T ;H ;U ;3;34
+969;Touring-1000 Blue, 60;BK-T79U-60;Blue;1481,9379;2384,07;T ;H ;U ;3;34
+970;Touring-2000 Blue, 46;BK-T44U-46;Blue;755,1508;1214,85;T ;M ;U ;3;35
+971;Touring-2000 Blue, 50;BK-T44U-50;Blue;755,1508;1214,85;T ;M ;U ;3;35
+972;Touring-2000 Blue, 54;BK-T44U-54;Blue;755,1508;1214,85;T ;M ;U ;3;35
+973;Road-350-W Yellow, 40;BK-R79Y-40;Yellow;1082,51;1700,99;R ;M ;W ;2;27
+974;Road-350-W Yellow, 42;BK-R79Y-42;Yellow;1082,51;1700,99;R ;M ;W ;2;27
+975;Road-350-W Yellow, 44;BK-R79Y-44;Yellow;1082,51;1700,99;R ;M ;W ;2;27
+976;Road-350-W Yellow, 48;BK-R79Y-48;Yellow;1082,51;1700,99;R ;M ;W ;2;27
+977;Road-750 Black, 58;BK-R19B-58;Black;343,6496;539,99;R ;L ;U ;2;31
+978;Touring-3000 Blue, 44;BK-T18U-44;Blue;461,4448;742,35;T ;L ;U ;3;36
+979;Touring-3000 Blue, 50;BK-T18U-50;Blue;461,4448;742,35;T ;L ;U ;3;36
+980;Mountain-400-W Silver, 38;BK-M38S-38;Silver;419,7784;769,49;M ;M ;W ;1;22
+981;Mountain-400-W Silver, 40;BK-M38S-40;Silver;419,7784;769,49;M ;M ;W ;1;22
+982;Mountain-400-W Silver, 42;BK-M38S-42;Silver;419,7784;769,49;M ;M ;W ;1;22
+983;Mountain-400-W Silver, 46;BK-M38S-46;Silver;419,7784;769,49;M ;M ;W ;1;22
+984;Mountain-500 Silver, 40;BK-M18S-40;Silver;308,2179;564,99;M ;L ;U ;1;23
+985;Mountain-500 Silver, 42;BK-M18S-42;Silver;308,2179;564,99;M ;L ;U ;1;23
+986;Mountain-500 Silver, 44;BK-M18S-44;Silver;308,2179;564,99;M ;L ;U ;1;23
+987;Mountain-500 Silver, 48;BK-M18S-48;Silver;308,2179;564,99;M ;L ;U ;1;23
+988;Mountain-500 Silver, 52;BK-M18S-52;Silver;308,2179;564,99;M ;L ;U ;1;23
+989;Mountain-500 Black, 40;BK-M18B-40;Black;294,5797;539,99;M ;L ;U ;1;23
+990;Mountain-500 Black, 42;BK-M18B-42;Black;294,5797;539,99;M ;L ;U ;1;23
+991;Mountain-500 Black, 44;BK-M18B-44;Black;294,5797;539,99;M ;L ;U ;1;23
+992;Mountain-500 Black, 48;BK-M18B-48;Black;294,5797;539,99;M ;L ;U ;1;23
+993;Mountain-500 Black, 52;BK-M18B-52;Black;294,5797;539,99;M ;L ;U ;1;23
+997;Road-750 Black, 44;BK-R19B-44;Black;343,6496;539,99;R ;L ;U ;2;31
+998;Road-750 Black, 48;BK-R19B-48;Black;343,6496;539,99;R ;L ;U ;2;31
+999;Road-750 Black, 52;BK-R19B-52;Black;343,6496;539,99;R ;L ;U ;2;31
