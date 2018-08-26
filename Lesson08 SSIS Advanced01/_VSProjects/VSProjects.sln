@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project01_PrecedenceConstr", "Project01_PrecedenceConstr\Project01_PrecedenceConstr.dtproj", "{7418C6CF-406B-46E8-87A7-120247AC0682}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project02_ForLoop", "Project02_ForLoop\Project02_ForLoop.dtproj", "{181C62A1-7793-4D6F-86DF-E682A7F11A19}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7418C6CF-406B-46E8-87A7-120247AC0682}.Development|Default.ActiveCfg = Development
+		{7418C6CF-406B-46E8-87A7-120247AC0682}.Development|Default.Build.0 = Development
+		{181C62A1-7793-4D6F-86DF-E682A7F11A19}.Development|Default.ActiveCfg = Development
+		{181C62A1-7793-4D6F-86DF-E682A7F11A19}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A69DE936-767C-4C79-8F9C-B592286ED3F2}
+	EndGlobalSection
+EndGlobal

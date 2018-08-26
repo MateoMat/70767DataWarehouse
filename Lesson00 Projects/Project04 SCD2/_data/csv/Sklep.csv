@@ -1,0 +1,307 @@
+StoreBusinessId;StoreName;StoreDescription;Status;ManagerKey;GeographyKey
+1;Contoso Seattle No.1 Store;Contoso Seattle No.1 Store;On;35;693
+2;Contoso Seattle No.2 Store;Contoso Seattle No.2 Store;On;35;693
+3;Contoso Kennewick Store;Contoso Kennewick Store;On;36;856
+4;Contoso Bellevue Store;Contoso Bellevue Store;On;37;424
+5;Contoso Redmond Store;Contoso Redmond Store;On;38;677
+6;Contoso Yakima Store;Contoso Yakima Store;On;39;575
+7;Contoso Granger Store;Contoso Granger Store;On;40;838
+8;Contoso Sunnyside Store;Contoso Sunnyside Store;On;41;935
+9;Contoso Toppenish Store;Contoso Toppenish Store;On;42;941
+10;Contoso Wapato Store;Contoso Wapato Store;On;43;947
+11;Contoso Cle Elum Store;Contoso Cle Elum Store;On;44;813
+12;Contoso North Bend Store;Contoso North Bend Store;Off;45;893
+13;Contoso Snoqualmie Store;Contoso Snoqualmie Store;On;46;930
+14;Contoso Fall City Store;Contoso Fall City Store;On;47;825
+15;Contoso Renton Store;Contoso Renton Store;On;48;678
+16;Contoso Everett Store;Contoso Everett Store;On;49;627
+17;Contoso Spokane Store;Contoso Spokane Store;On;135;551
+18;Contoso Veradale Store;Contoso Veradale Store;On;50;944
+19;Contoso Cheney Store;Contoso Cheney Store;Off;51;812
+20;Contoso Englewood Store;Contoso Englewood Store;On;52;824
+21;Contoso Wheat Ridge Store;Contoso Wheat Ridge Store;On;66;950
+22;Contoso Westminster Store;Contoso Westminster Store;On;54;571
+23;Contoso Grand Junction Store;Contoso Grand Junction Store;On;55;836
+24;Contoso New Castle Store;Contoso New Castle Store;On;56;887
+25;Contoso Greeley  No.1 Store;Contoso Greeley  No.1 Store;On;57;839
+26;Contoso Loveland Store;Contoso Loveland Store;On;58;867
+27;Contoso Lafayette Store;Contoso Lafayette Store;On;59;859
+28;Contoso Castle Rock Store;Contoso Castle Rock Store;On;60;809
+29;Contoso Sedalia Store;Contoso Sedalia Store;Off;61;927
+30;Contoso Fort Collins Store;Contoso Fort Collins Store;On;62;829
+31;Contoso Greeley No.2 Store;Contoso Greeley No.2 Store;On;57;839
+32;Contoso Milliken Store;Contoso Milliken Store;On;63;877
+33;Contoso Berthoud Store;Contoso Berthoud Store;On;64;799
+34;Contoso Denver No.1 Store;Contoso Denver No.1 Store;On;65;818
+35;Contoso Denver No.2 Store;Contoso Denver No.2 Store;On;65;818
+36;Contoso Denver No.3 Store;Contoso Denver No.3 Store;On;65;818
+37;Contoso Boulder Store;Contoso Boulder Store;On;66;803
+38;Contoso Thornton Store;Contoso Thornton Store;On;67;940
+39;Contoso Littleton Store;Contoso Littleton Store;On;68;865
+40;Contoso Aurora Store;Contoso Aurora Store;On;69;790
+41;Contoso Parker Store;Contoso Parker Store;On;70;904
+42;Contoso Green Bay Store;Contoso Green Bay Store;On;71;840
+43;Contoso Appleton Store;Contoso Appleton Store;On;72;786
+44;Contoso Menasha Store;Contoso Menasha Store;On;73;874
+45;Contoso Oshkosh Store;Contoso Oshkosh Store;On;74;901
+46;Contoso Fond du Lac Store;Contoso Fond du Lac Store;On;136;827
+47;Contoso Milwaukee No.1 Store;Contoso Milwaukee No.1 Store;On;75;878
+48;Contoso Milwaukee No.2 Store;Contoso Milwaukee No.2 Store;Off;75;878
+49;Contoso Milwaukee No.3 Store;Contoso Milwaukee No.3 Store;On;75;878
+50;Contoso Waukesha No.1 Store;Contoso Waukesha No.1 Store;On;76;949
+51;Contoso Racine No.1 Store;Contoso Racine No.1 Store;On;87;918
+52;Contoso Burlington Store;Contoso Burlington Store;On;137;806
+53;Contoso East Troy Store;Contoso East Troy Store;On;138;821
+54;Contoso Waukesha No.2 Store;Contoso Waukesha No.2 Store;On;76;949
+55;Contoso Germantown Store;Contoso Germantown Store;On;77;835
+57;Contoso Port Washington Store;Contoso Port Washington Store;On;79;913
+58;Contoso Sheboygan Store;Contoso Sheboygan Store;On;80;928
+59;Contoso Manitowoc Store;Contoso Manitowoc Store;On;81;871
+60;Contoso Madison Store;Contoso Madison Store;On;82;870
+61;Contoso Oregon Store;Contoso Oregon Store;On;83;898
+62;Contoso Stoughton Store;Contoso Stoughton Store;Off;84;934
+63;Contoso Edgerton Store;Contoso Edgerton Store;On;85;822
+64;Contoso Fort Atkinson Store;Contoso Fort Atkinson Store;On;86;828
+65;Contoso Racine No.2 Store;Contoso Racine No.2 Store;On;87;918
+66;Contoso Houston No.1 Store;Contoso Houston No.1 Store;On;88;849
+67;Contoso Houston No.2 Store;Contoso Houston No.2 Store;On;88;849
+68;Contoso Houston No.3 Store;Contoso Houston No.3 Store;On;88;849
+69;Contoso Houston No.4 Store;Contoso Houston No.4 Store;On;88;849
+70;Contoso Midland Store;Contoso Midland Store;On;89;876
+71;Contoso Russellville Store;Contoso Russellville Store;On;90;924
+72;Contoso Minden Store;Contoso Minden Store;On;91;879
+73;Contoso Shreveport Store;Contoso Shreveport Store;On;92;929
+74;Contoso Marshall Store;Contoso Marshall Store;On;93;872
+75;Contoso Longview Store;Contoso Longview Store;On;94;866
+76;Contoso Beaumont No.1 Store;Contoso Beaumont No.1 Store;On;95;798
+77;Contoso Orange Store;Contoso Orange Store;On;96;897
+78;Contoso Beaumont No.2 Store;Contoso Beaumont No.2 Store;On;95;798
+79;Contoso Baytown Store;Contoso Baytown Store;On;97;579
+80;Contoso La Porte Store;Contoso La Porte Store;On;98;858
+81;Contoso Bacliff Store;Contoso Bacliff Store;On;99;793
+82;Contoso Texas City Store;Contoso Texas City Store;On;100;939
+83;Contoso Pasadena Store;Contoso Pasadena Store;On;101;906
+84;Contoso Humble Store;Contoso Humble Store;Off;102;851
+85;Contoso Spring Store;Contoso Spring Store;On;103;933
+86;Contoso Austin Store;Contoso Austin Store;On;104;791
+87;Contoso San Antonio Store;Contoso San Antonio Store;On;105;925
+88;Contoso Cedar Park Store;Contoso Cedar Park Store;On;106;453
+89;Contoso Round Rock Store;Contoso Round Rock Store;On;107;923
+90;Contoso Dallas Store;Contoso Dallas Store;On;108;815
+91;Contoso Georgetown Store;Contoso Georgetown Store;On;109;834
+92;Contoso Hillsboro Store;Contoso Hillsboro Store;On;110;845
+93;Contoso Arlington Store;Contoso Arlington Store;On;111;787
+94;Contoso Grand Prairie Store;Contoso Grand Prairie Store;On;112;837
+95;Contoso Desoto Store;Contoso Desoto Store;On;113;819
+96;Contoso Richardson Store;Contoso Richardson Store;On;114;919
+97;Contoso Lewisville Store;Contoso Lewisville Store;On;115;863
+98;Contoso Denton Store;Contoso Denton Store;On;116;817
+99;Contoso Fort Worth Store;Contoso Fort Worth Store;On;117;831
+100;Contoso Plano Store;Contoso Plano Store;On;118;910
+101;Contoso Miami No.1 Store;Contoso Miami No.1 Store;On;119;875
+102;Contoso Miami No.2 Store;Contoso Miami No.2 Store;On;119;875
+103;Contoso Jacksonville Store;Contoso Jacksonville Store;On;120;853
+104;Contoso Tallahassee No.1 Store;Contoso Tallahassee No.1 Store;On;121;937
+105;Contoso Tallahassee No.2 Store;Contoso Tallahassee No.2 Store;On;121;937
+107;Contoso Sebring Store;Contoso Sebring Store;On;123;926
+108;Contoso Lakeland Store;Contoso Lakeland Store;On;124;860
+109;Contoso Fort Lauderdale Store;Contoso Fort Lauderdale Store;On;125;830
+110;Contoso Orlando Store;Contoso Orlando Store;On;126;899
+111;Contoso Tampa Store;Contoso Tampa Store;On;127;938
+112;Contoso Key West Store;Contoso Key West Store;Off;128;857
+113;Contoso Cape Canaveral Store;Contoso Cape Canaveral Store;On;129;807
+114;Contoso Albany Store;Contoso Albany Store;On;130;782
+115;Contoso New York No.1 Store;Contoso New York No.1 Store;On;131;890
+116;Contoso Rochester No.1 Store;Contoso Rochester No.1 Store;On;132;922
+117;Contoso New York No.2 Store;Contoso New York No.2 Store;On;131;890
+118;Contoso Syracuse Store;Contoso Syracuse Store;On;133;936
+119;Contoso Buffalo Store;Contoso Buffalo Store;Off;134;805
+120;Contoso Plattsburgh Store;Contoso Plattsburgh Store;On;139;911
+121;Contoso Brooklyn Store;Contoso Brooklyn Store;On;140;804
+122;Contoso Oswego Store;Contoso Oswego Store;On;141;902
+123;Contoso Ithaca Store;Contoso Ithaca Store;On;142;852
+124;Contoso Rochester No.2 Store;Contoso Rochester No.2 Store;On;132;922
+125;Contoso Queens Store;Contoso Queens Store;On;143;916
+126;Contoso Elmira Store;Contoso Elmira Store;On;144;823
+127;Contoso Poestenkill Store;Contoso Poestenkill Store;On;145;912
+128;Contoso Trenton No.1 Store;Contoso Trenton No.1 Store;On;146;943
+129;Contoso Trenton No.2 Store;Contoso Trenton No.2 Store;Off;146;943
+130;Contoso Newark No.1 Store;Contoso Newark No.1 Store;On;147;891
+131;Contoso Newark No.2 Store;Contoso Newark No.2 Store;On;147;891
+132;Contoso Jersey City Store;Contoso Jersey City Store;On;148;854
+133;Contoso Paterson Store;Contoso Paterson Store;On;149;908
+134;Contoso Clifton Store;Contoso Clifton Store;On;150;814
+135;Contoso East Orange Store;Contoso East Orange Store;On;151;820
+136;Contoso Passaic Store;Contoso Passaic Store;On;152;907
+137;Contoso Bayonne Store;Contoso Bayonne Store;On;153;797
+138;Contoso Vineland Store;Contoso Vineland Store;On;154;945
+139;Contoso New Brunswick Store;Contoso New Brunswick Store;On;155;886
+140;Contoso Hackensack Store;Contoso Hackensack Store;On;156;842
+141;Contoso Atlantic City Store;Contoso Atlantic City Store;On;157;788
+142;Contoso Montclair Store;Contoso Montclair Store;On;158;880
+143;Contoso Hoboken Store;Contoso Hoboken Store;On;159;847
+144;Contoso Morristown Store;Contoso Morristown Store;On;160;882
+145;Contoso Cape May Store;Contoso Cape May Store;On;161;808
+146;Contoso Boston Store;Contoso Boston Store;On;162;802
+147;Contoso Worcester No.1 Store;Contoso Worcester No.1 Store;On;163;952
+148;Contoso Worcester No.2 Store;Contoso Worcester No.2 Store;Off;163;952
+149;Contoso New Bedford Store;Contoso New Bedford Store;On;164;885
+150;Contoso Attleboro Store;Contoso Attleboro Store;On;165;789
+151;Contoso Lowell Store;Contoso Lowell Store;On;166;868
+152;Contoso Leominster Store;Contoso Leominster Store;On;167;861
+153;Contoso Hingham Store;Contoso Hingham Store;On;168;846
+154;Contoso Quincy Store;Contoso Quincy Store;On;169;917
+155;Contoso Framingham Store;Contoso Framingham Store;On;170;832
+156;Contoso Cambridge Store;Contoso Cambridge Store;On;171;449
+157;Contoso Somerville Store;Contoso Somerville Store;On;172;931
+158;Contoso Haverhill Store;Contoso Haverhill Store;On;173;844
+159;Contoso Lynn Store;Contoso Lynn Store;On;174;869
+160;Contoso Northampton Store;Contoso Northampton Store;On;175;895
+161;Contoso Holyoke Store;Contoso Holyoke Store;On;176;848
+162;Contoso Pittsfield Store;Contoso Pittsfield Store;Off;177;909
+163;Contoso Falmouth Store;Contoso Falmouth Store;On;178;826
+164;Contoso Provincetown Store;Contoso Provincetown Store;On;179;914
+165;Contoso Nantucket Store;Contoso Nantucket Store;On;180;883
+166;Contoso Bangor Store;Contoso Bangor Store;On;181;795
+167;Contoso Bar Harbor Store;Contoso Bar Harbor Store;On;182;796
+168;Contoso Kennebunkport Store;Contoso Kennebunkport Store;On;183;855
+169;Contoso Lewiston Store;Contoso Lewiston Store;On;184;862
+170;Contoso Orono Store;Contoso Orono Store;On;185;900
+171;Contoso South Portland Store;Contoso South Portland Store;On;186;932
+172;Contoso Hartford Store;Contoso Hartford Store;On;187;843
+173;Contoso Bridgeport Store;Contoso Bridgeport Store;On;188;801
+174;Contoso Waterbury Store;Contoso Waterbury Store;On;189;948
+175;Contoso Old Saybrook Store;Contoso Old Saybrook Store;On;190;896
+176;Contoso Darien Store;Contoso Darien Store;On;191;816
+177;Contoso New Haven Store;Contoso New Haven Store;On;192;888
+178;Contoso Litchfield County Store;Contoso Litchfield County Store;On;193;864
+179;Contoso New London Store;Contoso New London Store;On;194;889
+180;Contoso Norfolk Store;Contoso Norfolk Store;On;195;892
+181;Contoso Virginia Beach Store;Contoso Virginia Beach Store;On;196;946
+182;Contoso Winchester Store;Contoso Winchester Store;On;197;951
+183;Contoso Anchorage Store;Contoso Anchorage Store;On;111;784
+184;Contoso Alexandria Store;Contoso Alexandria Store;Off;198;783
+185;Contoso Roanoke Store;Contoso Roanoke Store;On;199;921
+186;Contoso Charlottesville Store;Contoso Charlottesville Store;On;200;811
+187;Contoso Fredericksburg Store;Contoso Fredericksburg Store;On;201;833
+188;Contoso Martinsville Store;Contoso Martinsville Store;On;202;873
+189;Contoso Greenville Store;Contoso Greenville Store;On;203;841
+190;Contoso Charleston Store;Contoso Charleston Store;On;204;810
+191;Contoso Annapolis Store;Contoso Annapolis Store;On;205;785
+192;Contoso Baltimore Store;Contoso Baltimore Store;On;206;794
+193;Contoso Howard Store;Contoso Howard Store;On;207;850
+194;Contoso Ridgely Store;Contoso Ridgely Store;On;208;920
+195;Contoso Queen Anne's County Store;Contoso Queen Anne's County Store;On;209;915
+196;Contoso Parkville Store;Contoso Parkville Store;On;210;905
+197;Contoso Back River Store;Contoso Back River Store;On;211;792
+198;Contoso North Harford Store;Contoso North Harford Store;On;77;835
+199;Contoso North America Online Store;Contoso Online Store;On;212;800
+200;Contoso Catalog Store;Contoso Catalog Store;On;213;894
+201;Contoso London Store;Contoso London Store;On;219;506
+202;Contoso Edinburgh Store;Contoso Edinburgh Store;On;220;748
+203;Contoso Glasgow Store;Contoso Glasgow Store;On;221;751
+204;Contoso York Store;Contoso York Store;On;222;576
+205;Contoso Carlisle Store;Contoso Carlisle Store;On;223;742
+206;Contoso Manchester Store;Contoso Manchester Store;On;224;761
+207;Contoso Lancashire Store;Contoso Lancashire Store;On;225;755
+208;Contoso West Yorkshire Store;Contoso West Yorkshire Store;On;226;781
+209;Contoso Baildon Store;Contoso Baildon Store;On;227;738
+210;Contoso Cheshire Store;Contoso Cheshire Store;On;228;743
+211;Contoso Stockport Store;Contoso Stockport Store;On;229;774
+212;Contoso Liverpool Store;Contoso Liverpool Store;On;230;651
+213;Contoso Knotty Ash Store;Contoso Knotty Ash Store;On;231;753
+214;Contoso Leeds Store;Contoso Leeds Store;On;232;501
+215;Contoso Paris Store;Contoso Paris Store;On;233;529
+216;Contoso Marseille Store;Contoso Marseille Store;On;234;762
+217;Contoso Lyon Store;Contoso Lyon Store;On;235;759
+218;Contoso Toulouse Store;Contoso Toulouse Store;On;236;777
+219;Contoso Nice Store;Contoso Nice Store;On;237;767
+220;Contoso Nantes Store;Contoso Nantes Store;On;238;766
+221;Contoso Strasbourg Store;Contoso Strasbourg Store;On;239;775
+222;Contoso Roma Store;Contoso Roma Store;On;240;771
+223;Contoso Venezia Store;Contoso Venezia Store;On;241;779
+224;Contoso Firenze Store;Contoso Firenze Store;On;242;749
+225;Contoso Torino Store;Contoso Torino Store;On;243;776
+226;Contoso Milan Store;Contoso Milan Store;On;244;763
+227;Contoso Naples Store;Contoso Naples Store;On;245;884
+228;Contoso Berlin Store;Contoso Berlin Store;On;246;586
+230;Contoso koln No.2 Store;Contoso Cologne Store;On;247;754
+231;Contoso Hofheim Store;Contoso Hofheim Store;On;248;752
+232;Contoso koln No.1 Store;Contoso koln Store;On;249;754
+233;Contoso Landstuhl Store;Contoso Landstuhl Store;On;250;756
+234;Contoso Dusseldorf Store;Contoso Dusseldorf Store;On;251;747
+235;Contoso Ramstein Store;Contoso Ramstein Store;On;252;770
+236;Contoso Baumholder Store;Contoso Baumholder Store;On;253;739
+237;Contoso Giebelstadt Store;Contoso Giebelstadt Store;On;254;750
+238;Contoso obamberg Store;Contoso obamberg Store;On;255;769
+239;Contoso Munich Store;Contoso Munich Store;On;256;765
+240;Contoso Amsterdam Store;Contoso Amsterdam Store;On;257;736
+241;Contoso Copenhagen Store;Contoso Copenhagen Store;On;258;745
+242;Contoso Stockholm Store;Contoso Stockholm Store;On;259;773
+243;Contoso Madrid Store;Contoso Madrid Store;On;260;760
+244;Contoso Ljubljana Store;Contoso Ljubljana Store;On;261;758
+245;Contoso Bucharest Store;Contoso Bucharest Store;On;262;741
+246;Contoso Berne Store;Contoso Berne Store;On;263;740
+247;Contoso Warsaw Store;Contoso Warsaw Store;On;264;780
+248;Contoso Valletta Store;Contoso Valletta Store;On;265;778
+249;Contoso Dublin Store;Contoso Dublin Store;On;266;746
+250;Contoso Athens Store;Contoso Athens Store;On;267;737
+251;Contoso Singapore Store;Contoso Singapore Store;On;268;728
+252;Contoso Canberra Store;Contoso Canberra Store;On;296;713
+253;Contoso Sydney No.1 Store;Contoso Sydney No.1 Store;On;294;558
+254;Contoso Yerevan Store;Contoso Yerevan Store;On;295;734
+255;Contoso New Delhi Store;Contoso New Delhi Store;On;269;723
+256;Contoso Mumbai Store;Contoso Mumbai Store;On;270;721
+257;Contoso Kolkata Store;Contoso Kolkata Store;On;271;718
+258;Contoso Thimphu No.1 Store;Contoso Thimphu No.1 Store;On;272;731
+259;Contoso Hong Kong No.1 Store;Contoso Hong Kong No.1 Store;On;273;716
+260;Contoso Tehran No.1 Store;Contoso Tehran No.1 Store;On;274;730
+261;Contoso Damascus No.1 Store;Contoso Damascus No.1 Store;On;275;714
+262;Contoso Bangkok No.1 Store;Contoso Bangkok No.1 Store;On;276;709
+263;Contoso Moscow  No.1 Store;Contoso Moscow  No.1 Store;On;277;764
+264;Contoso Ashgabat No.1 Store;Contoso Ashgabat No.1 Store;On;278;708
+265;Contoso Islamabad No.1 Store;Contoso Islamabad No.1 Store;On;279;717
+267;Contoso Tokyo No.1 Store;Contoso Tokyo No.1 Store;On;281;732
+268;Contoso Tokyo No.2 Store;Contoso Tokyo No.2 Store;On;281;732
+269;Contoso Yokohama Store;Contoso Yokohama Store;On;282;735
+270;Contoso Osaka No.1 Store;Contoso Osaka No.1 Store;On;283;724
+271;Contoso Nagoya Store;Contoso Nagoya Store;On;284;722
+272;Contoso Sapporo Store;Contoso Sapporo Store;On;285;725
+273;Contoso Kyoto Store;Contoso Kyoto Store;On;286;719
+274;Contoso Seoul Store;Contoso Seoul Store;On;287;726
+275;Contoso Busan Store;Contoso Busan Store;On;288;712
+276;Contoso Bishkek Store;Contoso Bishkek Store;On;289;711
+277;Contoso Shanghai No.1 Store;Contoso Shanghai No.1 Store;On;290;727
+278;Contoso Urumqi Store;Contoso Urumqi Store;On;291;733
+279;Contoso Beijing Store;Contoso Beijing Store;On;292;710
+280;Contoso Guangzhou Store;Contoso Guangzhou Store;On;293;715
+281;Contoso Shanghai No.2 Store;Contoso Shanghai No.2 Store;On;290;727
+282;Contoso Ottawa No.1 Store;ContosoOttawa No.1 Store;On;214;903
+283;Contoso Ottawa No.2 Store;ContosoOttawa No.2 Store;On;214;903
+284;Contoso Toronto No.1 Store;Contoso Toronto No.1 Store;On;215;942
+285;Contoso Toronto No.2 Store;Contoso Toronto No.2 Store;On;215;942
+286;Contoso Toronto No.3 Store;Contoso Toronto No.3 Store;On;215;942
+287;Contoso Montreal No.1 Store;Contoso Montreal No.1 Store;On;216;881
+288;Contoso Montreal No.2 Store;Contoso Montreal No.2 Store;On;216;881
+289;Contoso Vancouver  No.1 Store;Contoso Vancouver  No.1 Store;On;217;562
+290;Contoso Vancouver  No.2 Store;Contoso Vancouver  No.2 Store;On;217;562
+291;Contoso Calgary  Store;Contoso Calgary  Store;On;218;598
+292;Contoso Thimphu No.2 Store;Contoso Thimphu No.2 Store;On;272;731
+293;Contoso Hong Kong No.2 Store;Contoso Hong Kong No.2 Store;On;273;716
+294;Contoso Tehran No.2 Store;Contoso Tehran No.2 Store;On;274;730
+295;Contoso Damascus No.2 Store;Contoso Damascus No.2 Store;On;275;714
+296;Contoso Bangkok No.2 Store;Contoso Bangkok No.2 Store;On;276;709
+297;Contoso Moscow  No.2 Store;Contoso Moscow  No.2 Store;On;277;764
+298;Contoso Ashgabat  No.2 Store;Contoso Ashgabat  No.2 Store;On;278;708
+299;Contoso Islamabad  No.2 Store;Contoso Islamabad  No.2 Store;On;279;717
+300;Contoso Sydney  No.2 Store;Contoso Sydney  No.2 Store;On;294;558
+301;Contoso Osaka No.2 Store;Contoso Osaka No.2 Store;On;283;724
+302;Contoso Taipei  Store;Contoso Taipei  Store;On;24;729
+303;Contoso Lisbon Store;Contoso Lisbon Store;On;25;757
+304;Contoso Saint Petersburg Store;Contoso Saint Petersburg Store;On;14;772
+305;Contoso Nizhny Novgorod Store;Contoso Nizhny Novgorod Store;On;15;768
+306;Contoso Europe Online Store;Contoso Europe Online Store;On;246;586
+307;Contoso Asia Online Store;Contoso Asia Online Store;On;292;710
+308;Contoso North America Reseller;Contoso North America Reseller;On;35;693
+309;Contoso Europe Reseller;Contoso Europe Reseller;On;233;529
+310;Contoso Asia Reseller;Contoso Asia Reseller;On;292;710

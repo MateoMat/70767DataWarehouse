@@ -1,0 +1,26 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2042
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project01_FileGenerator", "Project01_FileGenerator\Project01_FileGenerator.dtproj", "{CDBB1BAB-2F73-4671-8D5D-D55E310AA749}"
+EndProject
+Project("{159641D6-6404-4A2A-AE62-294DE0FE8301}") = "Project02_FileLoader", "Project02_FileLoader\Project02_FileLoader.dtproj", "{D7DEF6C9-C76C-413C-851A-83CFE1F9ED24}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDBB1BAB-2F73-4671-8D5D-D55E310AA749}.Development|Default.ActiveCfg = Development
+		{CDBB1BAB-2F73-4671-8D5D-D55E310AA749}.Development|Default.Build.0 = Development
+		{D7DEF6C9-C76C-413C-851A-83CFE1F9ED24}.Development|Default.ActiveCfg = Development
+		{D7DEF6C9-C76C-413C-851A-83CFE1F9ED24}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3ED09851-CA2F-43F6-8AF8-5A9CCD70072C}
+	EndGlobalSection
+EndGlobal

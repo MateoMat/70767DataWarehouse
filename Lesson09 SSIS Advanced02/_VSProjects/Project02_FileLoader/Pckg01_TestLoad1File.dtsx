@@ -1,0 +1,675 @@
+﻿<?xml version="1.0"?>
+<DTS:Executable xmlns:DTS="www.microsoft.com/SqlServer/Dts"
+  DTS:refId="Package"
+  DTS:CreationDate="2/19/2018 8:52:54 PM"
+  DTS:CreationName="Microsoft.Package"
+  DTS:CreatorComputerName="ITK"
+  DTS:CreatorName="ITK\tomek"
+  DTS:DTSID="{3A6EF5FB-36AE-486A-91D3-193DDFDC521F}"
+  DTS:ExecutableType="Microsoft.Package"
+  DTS:LastModifiedProductVersion="13.0.2165.0"
+  DTS:LocaleID="1045"
+  DTS:ObjectName="Pckg01_TestLoad1File"
+  DTS:PackageType="5"
+  DTS:VersionBuild="4"
+  DTS:VersionGUID="{E3894705-83B3-4CD1-979D-0DDE49F76EAB}">
+  <DTS:Property
+    DTS:Name="PackageFormatVersion">8</DTS:Property>
+  <DTS:Variables />
+  <DTS:Executables>
+    <DTS:Executable
+      DTS:refId="Package\DFTSchool"
+      DTS:CreationName="Microsoft.Pipeline"
+      DTS:Description="Data Flow Task"
+      DTS:DTSID="{029E0FA6-A27F-476B-9907-7743C60A1713}"
+      DTS:ExecutableType="Microsoft.Pipeline"
+      DTS:LocaleID="-1"
+      DTS:ObjectName="DFTSchool"
+      DTS:TaskContact="Performs high-performance data extraction, transformation and loading;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved;http://www.microsoft.com/sql/support/default.asp;1">
+      <DTS:Variables />
+      <DTS:ObjectData>
+        <pipeline
+          version="1">
+          <components>
+            <component
+              refId="Package\DFTSchool\Flat File Source"
+              componentClassID="Microsoft.FlatFileSource"
+              contactInfo="Flat File Source;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;1"
+              description="Flat File Source"
+              localeId="1045"
+              name="Flat File Source"
+              usesDispositions="true"
+              version="1">
+              <properties>
+                <property
+                  dataType="System.Boolean"
+                  description="Specifies whether zero-length columns are treated as null."
+                  name="RetainNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of an output column containing the file name. If no name is specified, no output column containing the file name will be generated."
+                  name="FileNameColumnName"></property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFTSchool\Flat File Source.Connections[FlatFileConnection]"
+                  connectionManagerID="{70AA331B-7B14-46CF-B5FE-0BB2D57EBD56}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[FlatFile]"
+                  name="FlatFileConnection" />
+              </connections>
+              <outputs>
+                <output
+                  refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output]"
+                  name="Flat File Source Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL CODE]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SCHOOL CODE]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL CODE]"
+                      name="SCHOOL CODE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL NAME]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SCHOOL NAME]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL NAME]"
+                      name="SCHOOL NAME"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[GRADE ]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRADE ]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[GRADE ]"
+                      name="GRADE "
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[PROGRAM TYPE]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROGRAM TYPE]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[PROGRAM TYPE]"
+                      name="PROGRAM TYPE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      name="NUMBER OF STUDENTS   SEATS FILLED"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF SECTIONS]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMBER OF SECTIONS]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF SECTIONS]"
+                      name="NUMBER OF SECTIONS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[AVERAGE CLASS SIZE]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AVERAGE CLASS SIZE]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[AVERAGE CLASS SIZE]"
+                      name="AVERAGE CLASS SIZE"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF SMALLEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SIZE OF SMALLEST CLASS]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF SMALLEST CLASS]"
+                      name="SIZE OF SMALLEST CLASS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF LARGEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      errorOrTruncationOperation="Conversion"
+                      errorRowDisposition="FailComponent"
+                      externalMetadataColumnId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SIZE OF LARGEST CLASS]"
+                      length="50"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF LARGEST CLASS]"
+                      name="SIZE OF LARGEST CLASS"
+                      truncationRowDisposition="FailComponent">
+                      <properties>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the column uses the faster, locale-neutral parsing routines."
+                          name="FastParse">false</property>
+                        <property
+                          dataType="System.Boolean"
+                          description="Indicates whether the data is in binary format."
+                          name="UseBinaryFormat">false</property>
+                      </properties>
+                    </outputColumn>
+                  </outputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SCHOOL CODE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SCHOOL CODE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SCHOOL NAME]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SCHOOL NAME" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[GRADE ]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="GRADE " />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[PROGRAM TYPE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PROGRAM TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="NUMBER OF STUDENTS   SEATS FILLED" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[NUMBER OF SECTIONS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="NUMBER OF SECTIONS" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[AVERAGE CLASS SIZE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AVERAGE CLASS SIZE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SIZE OF SMALLEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SIZE OF SMALLEST CLASS" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].ExternalColumns[SIZE OF LARGEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SIZE OF LARGEST CLASS" />
+                  </externalMetadataColumns>
+                </output>
+                <output
+                  refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output]"
+                  isErrorOut="true"
+                  name="Flat File Source Error Output">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      codePage="1250"
+                      dataType="text"
+                      description="Flat File Source Error Output Column"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[Flat File Source Error Output Column]"
+                      name="Flat File Source Error Output Column" />
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+            <component
+              refId="Package\DFTSchool\OLE DB Destination"
+              componentClassID="Microsoft.OLEDBDestination"
+              contactInfo="OLE DB Destination;Microsoft Corporation; Microsoft SQL Server; (C) Microsoft Corporation; All Rights Reserved; http://www.microsoft.com/sql/support;4"
+              description="OLE DB Destination"
+              name="OLE DB Destination"
+              usesDispositions="true"
+              version="4">
+              <properties>
+                <property
+                  dataType="System.Int32"
+                  description="The number of seconds before a command times out.  A value of 0 indicates an infinite time-out."
+                  name="CommandTimeout">0</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the name of the database object used to open a rowset."
+                  name="OpenRowset">[SchoolTest1File]</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies the variable that contains the name of the database object used to open a rowset."
+                  name="OpenRowsetVariable"></property>
+                <property
+                  dataType="System.String"
+                  description="The SQL command to be executed."
+                  name="SqlCommand"
+                  UITypeEditor="Microsoft.DataTransformationServices.Controls.ModalMultilineStringEditor"></property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the column code page to use when code page information is unavailable from the data source."
+                  name="DefaultCodePage">1250</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Forces the use of the DefaultCodePage property value when describing character data."
+                  name="AlwaysUseDefaultCodePage">false</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies the mode used to access the database."
+                  name="AccessMode"
+                  typeConverter="AccessMode">3</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the values supplied for identity columns will be copied to the destination. If false, values for identity columns will be auto-generated at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepIdentity">false</property>
+                <property
+                  dataType="System.Boolean"
+                  description="Indicates whether the columns containing null will have null inserted in the destination. If false, columns containing null will have their default values inserted at the destination. Applies only if fast load is turned on."
+                  name="FastLoadKeepNulls">false</property>
+                <property
+                  dataType="System.String"
+                  description="Specifies options to be used with fast load.  Applies only if fast load is turned on."
+                  name="FastLoadOptions">TABLOCK,CHECK_CONSTRAINTS</property>
+                <property
+                  dataType="System.Int32"
+                  description="Specifies when commits are issued during data insertion.  A value of 0 specifies that one commit will be issued at the end of data insertion.  Applies only if fast load is turned on."
+                  name="FastLoadMaxInsertCommitSize">2147483647</property>
+              </properties>
+              <connections>
+                <connection
+                  refId="Package\DFTSchool\OLE DB Destination.Connections[OleDbConnection]"
+                  connectionManagerID="{B29BB9F2-FEC9-429F-877B-C9EAA2264A7E}:external"
+                  connectionManagerRefId="Project.ConnectionManagers[SSISExmpl]"
+                  description="The OLE DB runtime connection used to access the database."
+                  name="OleDbConnection" />
+              </connections>
+              <inputs>
+                <input
+                  refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input]"
+                  errorOrTruncationOperation="Insert"
+                  errorRowDisposition="FailComponent"
+                  hasSideEffects="true"
+                  name="OLE DB Destination Input">
+                  <inputColumns>
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SCHOOL CODE]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SCHOOL CODE"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHOOL CODE]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL CODE]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SCHOOL NAME]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SCHOOL NAME"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHOOL NAME]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SCHOOL NAME]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[GRADE ]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="GRADE "
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRADE ]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[GRADE ]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[PROGRAM TYPE]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="PROGRAM TYPE"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROGRAM TYPE]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[PROGRAM TYPE]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NUMBER OF STUDENTS   SEATS FILLED"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF STUDENTS   SEATS FILLED]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[NUMBER OF SECTIONS]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="NUMBER OF SECTIONS"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMBER OF SECTIONS]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[NUMBER OF SECTIONS]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[AVERAGE CLASS SIZE]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="AVERAGE CLASS SIZE"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AVERAGE CLASS SIZE]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[AVERAGE CLASS SIZE]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SIZE OF SMALLEST CLASS]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SIZE OF SMALLEST CLASS"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SIZE OF SMALLEST CLASS]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF SMALLEST CLASS]" />
+                    <inputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].Columns[SIZE OF LARGEST CLASS]"
+                      cachedCodepage="1250"
+                      cachedDataType="str"
+                      cachedLength="50"
+                      cachedName="SIZE OF LARGEST CLASS"
+                      externalMetadataColumnId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SIZE OF LARGEST CLASS]"
+                      lineageId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output].Columns[SIZE OF LARGEST CLASS]" />
+                  </inputColumns>
+                  <externalMetadataColumns
+                    isUsed="True">
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHOOL CODE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SCHOOL CODE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SCHOOL NAME]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SCHOOL NAME" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[GRADE ]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="GRADE " />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[PROGRAM TYPE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="PROGRAM TYPE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMBER OF STUDENTS   SEATS FILLED]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="NUMBER OF STUDENTS   SEATS FILLED" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[NUMBER OF SECTIONS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="NUMBER OF SECTIONS" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[AVERAGE CLASS SIZE]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="AVERAGE CLASS SIZE" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SIZE OF SMALLEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SIZE OF SMALLEST CLASS" />
+                    <externalMetadataColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input].ExternalColumns[SIZE OF LARGEST CLASS]"
+                      codePage="1250"
+                      dataType="str"
+                      length="50"
+                      name="SIZE OF LARGEST CLASS" />
+                  </externalMetadataColumns>
+                </input>
+              </inputs>
+              <outputs>
+                <output
+                  refId="Package\DFTSchool\OLE DB Destination.Outputs[OLE DB Destination Error Output]"
+                  exclusionGroup="1"
+                  isErrorOut="true"
+                  name="OLE DB Destination Error Output"
+                  synchronousInputId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input]">
+                  <outputColumns>
+                    <outputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      dataType="i4"
+                      lineageId="Package\DFTSchool\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorCode]"
+                      name="ErrorCode"
+                      specialFlags="1" />
+                    <outputColumn
+                      refId="Package\DFTSchool\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      dataType="i4"
+                      lineageId="Package\DFTSchool\OLE DB Destination.Outputs[OLE DB Destination Error Output].Columns[ErrorColumn]"
+                      name="ErrorColumn"
+                      specialFlags="2" />
+                  </outputColumns>
+                  <externalMetadataColumns />
+                </output>
+              </outputs>
+            </component>
+          </components>
+          <paths>
+            <path
+              refId="Package\DFTSchool.Paths[Flat File Source Output]"
+              endId="Package\DFTSchool\OLE DB Destination.Inputs[OLE DB Destination Input]"
+              name="Flat File Source Output"
+              startId="Package\DFTSchool\Flat File Source.Outputs[Flat File Source Output]" />
+          </paths>
+        </pipeline>
+      </DTS:ObjectData>
+    </DTS:Executable>
+  </DTS:Executables>
+  <DTS:DesignTimeProperties><![CDATA[<?xml version="1.0"?>
+<!--This CDATA section contains the layout information of the package. The section includes information such as (x,y) coordinates, width, and height.-->
+<!--If you manually edit this section and make a mistake, you can delete it. -->
+<!--The package will still be able to load normally but the previous layout information will be lost and the designer will automatically re-arrange the elements on the design surface.-->
+<Objects
+  Version="8">
+  <!--Each node below will contain properties that do not affect runtime behavior.-->
+  <Package
+    design-time-name="Package">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph">
+        <NodeLayout
+          Size="129,42"
+          Id="Package\DFTSchool"
+          TopLeft="105,59" />
+      </GraphLayout>
+    </LayoutInfo>
+  </Package>
+  <TaskHost
+    design-time-name="Package\DFTSchool">
+    <LayoutInfo>
+      <GraphLayout
+        Capacity="4" xmlns="clr-namespace:Microsoft.SqlServer.IntegrationServices.Designer.Model.Serialization;assembly=Microsoft.SqlServer.IntegrationServices.Graph" xmlns:mssgle="clr-namespace:Microsoft.SqlServer.Graph.LayoutEngine;assembly=Microsoft.SqlServer.Graph" xmlns:assembly="http://schemas.microsoft.com/winfx/2006/xaml">
+        <NodeLayout
+          Size="151,42"
+          Id="Package\DFTSchool\Flat File Source"
+          TopLeft="119,47" />
+        <NodeLayout
+          Size="171,42"
+          Id="Package\DFTSchool\OLE DB Destination"
+          TopLeft="261,170" />
+        <EdgeLayout
+          Id="Package\DFTSchool.Paths[Flat File Source Output]"
+          TopLeft="194.5,89">
+          <EdgeLayout.Curve>
+            <mssgle:Curve
+              StartConnector="{assembly:Null}"
+              EndConnector="152,81"
+              Start="0,0"
+              End="152,73.5">
+              <mssgle:Curve.Segments>
+                <mssgle:SegmentCollection
+                  Capacity="5">
+                  <mssgle:LineSegment
+                    End="0,36.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="0,36.5"
+                    Point2="0,40.5"
+                    Point3="4,40.5" />
+                  <mssgle:LineSegment
+                    End="148,40.5" />
+                  <mssgle:CubicBezierSegment
+                    Point1="148,40.5"
+                    Point2="152,40.5"
+                    Point3="152,44.5" />
+                  <mssgle:LineSegment
+                    End="152,73.5" />
+                </mssgle:SegmentCollection>
+              </mssgle:Curve.Segments>
+            </mssgle:Curve>
+          </EdgeLayout.Curve>
+          <EdgeLayout.Labels>
+            <EdgeLabelCollection />
+          </EdgeLayout.Labels>
+        </EdgeLayout>
+      </GraphLayout>
+    </LayoutInfo>
+  </TaskHost>
+  <PipelineComponentMetadata
+    design-time-name="Package\DFTSchool\OLE DB Destination">
+    <Properties>
+      <Property>
+        <Name>DataSourceViewID</Name>
+      </Property>
+      <Property>
+        <Name>TableInfoObjectType</Name>
+        <Value
+          type="q2:string">Table</Value>
+      </Property>
+    </Properties>
+  </PipelineComponentMetadata>
+</Objects>]]></DTS:DesignTimeProperties>
+</DTS:Executable>

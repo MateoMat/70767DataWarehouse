@@ -1,0 +1,675 @@
+GeographyKey;ContinentName;CityName;StateProvinceName;RegionCountryName
+1;Asia;;;
+2;Europe;;;
+3;North America;;;
+269;Asia;;;Armenia
+270;Asia;;;Australia
+271;Asia;;;Bhutan
+272;Asia;;;China
+273;Asia;;;India
+274;Asia;;;Iran
+275;Asia;;;Japan
+276;Asia;;;Kyrgyzstan
+277;Asia;;;Pakistan
+278;Asia;;;Singapore
+279;Asia;;;South Korea
+280;Asia;;;Syria
+281;Asia;;;Taiwan
+282;Asia;;;Thailand
+283;Asia;;;Turkmenistan
+284;Europe;;;Denmark       
+285;Europe;;;France
+286;Europe;;;Germany 
+287;Europe;;;Greece 
+288;Europe;;;the Netherlands
+289;Europe;;;Ireland 
+290;Europe;;;Italy    
+291;Europe;;;Malta
+292;Europe;;;Poland 
+293;Europe;;;Portugal
+294;Europe;;;Romania 
+295;Europe;;;Russia
+296;Europe;;;Slovenia
+297;Europe;;;Spain
+298;Europe;;;Sweden 
+299;Europe;;;Switzerland 
+300;Europe;;;United Kingdom
+301;North America;;;Canada
+302;North America;;;United States
+303;Asia;;Ahal Province;Turkmenistan
+304;Asia;;Armenia;Armenia
+305;Asia;;Beijing;China
+306;Asia;;Chubu;Japan
+307;Asia;;Chuy Province;Kyrgyzstan
+308;Asia;;Damascus;Syria
+309;Asia;;GuangDong;China
+310;Asia;;Hokkaido;Japan
+311;Asia;;Hong Kong;China
+312;Asia;;Islamabad Capital Territory;Pakistan
+313;Asia;;Kansai;Japan
+314;Asia;;Kanto;Japan
+315;Asia;;Krung Thep;Thailand
+316;Asia;;Maharashtra;India
+317;Asia;;Molonglo;Australia
+318;Asia;;National Capital Territory of Delhi;India
+319;Asia;;New South Wales;Australia
+320;Asia;;Seoul-jikhalsi;South Korea
+321;Asia;;Shanghai;China
+322;Asia;;Singapore;Singapore
+323;Asia;;Taiwan;Taiwan
+324;Asia;;Tehran;Iran
+325;Asia;;Thimphu District;Bhutan
+326;Asia;;Tohoku;Japan
+327;Asia;;West Bengal;India
+328;Asia;;Xinjiang;China
+329;Asia;;Yeongnam;South Korea
+330;Europe;;Alpes-Maritimes;France
+331;Europe;;Bas-Rhin;France
+332;Europe;;Bavaria;Germany 
+333;Europe;;Bayern;Germany 
+334;Europe;;Berlin;Germany 
+335;Europe;;Bern;Switzerland 
+336;Europe;;Bucuresti;Romania 
+337;Europe;;Central Greece and Evvoia;Greece 
+338;Europe;;England ;United Kingdom
+339;Europe;;Hesse;Germany 
+340;Europe;;Ile-del-France;France
+341;Europe;;Leinster;Ireland 
+342;Europe;;Lisboa Region;Portugal
+343;Europe;;Ljubljana;Slovenia
+344;Europe;;Lombardia;Italy    
+345;Europe;;Madrid;Spain
+346;Europe;;Midi-Pyrenees;France
+347;Europe;;Moskovskaya oblast;Russia
+348;Europe;;Nizhny Novgorod Oblast;Russia
+349;Europe;;Noord-Holland;the Netherlands
+350;Europe;;Nordrhein-Westfalen;Germany 
+351;Europe;;North Rhine-Westphalia;Germany 
+352;Europe;;Northwestern;Russia
+353;Europe;;Pays de la Loire;France
+354;Europe;;Provence-Alpes-Cote d'Azur;France
+355;Europe;;Province of Florence;Italy    
+356;Europe;;Province of Turin;Italy    
+357;Europe;;Rhineland-Palatinate;Germany 
+358;Europe;;Rhone-Alpes ;France
+359;Europe;;Roma;Italy    
+360;Europe;;Scotland;United Kingdom
+361;Europe;;Staden Kobenhavn;Denmark       
+362;Europe;;Stockholms;Sweden 
+363;Europe;;Valletta;Malta
+364;Europe;;Venice;Italy    
+365;Europe;;Warszawa;Poland 
+366;North America;;Alaska;United States
+367;North America;;Alberta;Canada
+368;North America;;British Columbia;Canada
+369;North America;;Colorado;United States
+370;North America;;Connecticut;United States
+371;North America;;Florida;United States
+372;North America;;Maine;United States
+373;North America;;Maryland;United States
+374;North America;;Massachusetts;United States
+375;North America;;New Jersey;United States
+376;North America;;New York;United States
+377;North America;;Ontario;Canada
+378;North America;;Quebec;Canada
+379;North America;;South Carolina;United States
+380;North America;;Texas;United States
+381;North America;;Virginia;United States
+382;North America;;Washington;United States
+383;North America;;Wisconsin;United States
+384;Asia;;Tasmania;Australia
+385;Europe;;Hessen;Germany
+386;North America;;Mississippi;United States
+387;Europe;;Essonne;France
+388;Europe;;Hamburg;Germany
+389;Europe;;Hauts de Seine;France
+390;North America;;Ohio;United States
+391;Europe;;Seine Saint Denis;France
+392;North America;;Alabama;United States
+393;Europe;;Garonne (Haute);France
+394;North America;;Arizona;United States
+395;Europe;;Pas de Calais;France
+396;North America;;North Carolina;United States
+397;North America;;Minnesota;United States
+398;Europe;;Yveline;France
+399;Europe;;Loiret;France
+400;Europe;;Nord;France
+401;North America;;Wyoming;United States
+402;Europe;;Seine (Paris);France
+403;Europe;;Val de Marne;France
+404;Europe;;Brandenburg;Germany
+405;Europe;;Val d'Oise;France
+406;North America;;Kentucky;United States
+407;Asia;;Queensland;Australia
+408;North America;;Illinois;United States
+409;North America;;Utah;United States
+410;Europe;;Seine et Marne;France
+411;North America;;Oregon;United States
+412;Asia;;South Australia;Australia
+413;Europe;;Somme;France
+414;Europe;;Loir et Cher;France
+415;North America;;Montana;United States
+416;Europe;;Charente-Maritime;France
+417;North America;;California;United States
+418;Europe;;Moselle;France
+419;Europe;;Saarland;Germany
+420;Asia;;Victoria;Australia
+421;North America;;Missouri;United States
+422;North America;;Georgia;United States
+423;Europe;Basingstoke Hants;England;United Kingdom
+424;North America;Bellevue;Washington;United States
+425;Asia;Bendigo;Victoria;Australia
+426;Europe;Berks;England;United Kingdom
+430;North America;Beverly Hills;California;United States
+431;North America;Billings;Montana;United States
+432;North America;Biloxi;Mississippi;United States
+433;North America;Birmingham;Alabama;United States
+434;North America;Bluffton;South Carolina;United States
+435;Europe;Bobigny;Seine Saint Denis;France
+436;North America;Bothell;Washington;United States
+437;Europe;Bottrop;North Rhine-Westphalia;Germany
+438;North America;Bountiful;Utah;United States
+439;Europe;Bracknell;England;United Kingdom
+440;North America;Braintree;Massachusetts;United States
+441;North America;Branson;Missouri;United States
+442;North America;Bremerton;Washington;United States
+443;North America;Burbank;California;United States
+444;North America;Burbank;Ohio;United States
+445;North America;Burlingame;California;United States
+446;North America;Burnaby;British Columbia;Canada
+447;Europe;Bury;England;United Kingdom
+448;North America;Byron;Georgia;United States
+449;Europe;Cambridge;England;United Kingdom
+450;North America;Campbellsville;Kentucky;United States
+451;North America;Carol Stream;Illinois;United States
+452;North America;Carrollton;Texas;United States
+453;North America;Cedar Park;Texas;United States
+454;Europe;Cergy;Val d'Oise;France
+455;North America;Cerritos;California;United States
+456;North America;Chalk River;Ontario;Canada
+457;North America;Chantilly;Virginia;United States
+458;North America;Charlotte;North Carolina;United States
+459;Europe;Chatou;Yveline;France
+460;North America;Chehalis;Washington;United States
+461;North America;Cheyenne;Wyoming;United States
+462;North America;Cincinnati;Ohio;United States
+463;North America;City Of Commerce;California;United States
+464;North America;Clarkston;Georgia;United States
+465;North America;Clay;New York;United States
+466;North America;Clearwater;Florida;United States
+467;North America;Cliffside;British Columbia;Canada
+468;Asia;Coffs Harbour;New South Wales;Australia
+469;North America;Colma;California;United States
+470;North America;Concord;California;United States
+471;Asia;Cranbourne;Victoria;Australia
+472;North America;Daly City;California;United States
+473;Asia;Darlinghurst;New South Wales;Australia
+474;Europe;Darmstadt;Hesse;Germany
+475;North America;Downey;California;United States
+476;Europe;Drancy;Seine Saint Denis;France
+478;Asia;East Brisbane;Queensland;Australia
+479;North America;Edmonds;Washington;United States
+480;Europe;Eilenburg;Saxony;Germany
+481;Europe;Esher-Molesey;England;United Kingdom
+482;Europe;Essen;North Rhine-Westphalia;Germany
+483;Europe;Frankfurt;Hesse;Germany
+485;Europe;Gateshead;England;United Kingdom
+486;Europe;Gloucestershire;England;United Kingdom
+487;Asia;Gold Coast;Queensland;Australia
+488;North America;Grossmont;California;United States
+490;North America;Haney;British Columbia;Canada
+491;Europe;Hanover;Lower Saxony;Germany
+492;Asia;Hervey Bay;Queensland;Australia
+493;Asia;Hobart;Tasmania;Australia
+494;North America;Imperial Beach;California;United States
+495;North America;Issaquah;Washington;United States
+496;Europe;Kiel;Schleswig-Holstein;Germany
+497;Europe;Kirkby;England;United Kingdom
+498;Europe;Lancaster;England;United Kingdom
+499;North America;Langley;British Columbia;Canada
+500;North America;Lebanon;Oregon;United States
+501;Europe;Leeds;England;United Kingdom
+502;North America;Lemon Grove;California;United States
+503;Europe;Les Ulis;Essonne;France
+504;Europe;Lieusaint;Seine et Marne;France
+505;North America;Lincoln Acres;California;United States
+506;Europe;London;England;United Kingdom
+507;North America;Lynnwood;Washington;United States
+508;North America;Marysville;Washington;United States
+509;Asia;Matraville;New South Wales;Australia
+510;Asia;Melton;Victoria;Australia
+511;North America;Metchosin;British Columbia;Canada
+512;Asia;Milsons Point;New South Wales;Australia
+513;Europe;Mühlheim am Main;Hesse;Germany
+515;Europe;Munster;North Rhine-Westphalia;Germany
+516;North America;National City;California;United States
+517;Europe;Neunkirchen;North Rhine-Westphalia;Germany
+518;Asia;Newcastle;New South Wales;Australia
+519;Asia;North Ryde;New South Wales;Australia
+520;North America;Oakland;California;United States
+521;Europe;Offenbach am Main;Hesse;Germany
+522;North America;Olympia;Washington;United States
+523;North America;Oregon City;Oregon;United States
+524;Europe;Orly;Val de Marne;France
+525;Europe;Oxford;England;United Kingdom
+527;North America;Palo Alto;California;United States
+528;Europe;Pantin;Seine Saint Denis;France
+529;Europe;Paris;Seine (Paris);France
+530;Europe;Paris La Defense;Hauts de Seine;France
+531;Asia;Perth;South Australia;Australia
+532;Europe;Peterborough;England;United Kingdom
+533;Europe;Poing;Bavaria;Germany
+534;Asia;Port Macquarie;New South Wales;Australia
+535;North America;Port Orchard;Washington;United States
+536;North America;Portland;Oregon;United States
+537;North America;Puyallup;Washington;United States
+538;North America;Redwood City;California;United States
+539;Europe;Roncq;Nord;France
+540;Europe;Roubaix;Nord;France
+541;Europe;Runcorn;England;United Kingdom
+542;Europe;Saarlouis;Saar;Germany
+543;Europe;Saint Germain en Laye;Yveline;France
+544;Europe;Saint Ouen;Somme;France
+545;Europe;Saint-Denis;Seine Saint Denis;France
+546;North America;San Carlos;California;United States
+547;North America;Santa Monica;California;United States
+548;Europe;S?vres;Hauts de Seine;France
+549;Asia;Silverwater;New South Wales;Australia
+550;North America;Sooke;British Columbia;Canada
+551;North America;Spokane;Washington;United States
+552;North America;Spring Valley;California;United States
+553;Asia;Springwood;New South Wales;Australia
+554;Asia;St. Leonards;New South Wales;Australia
+555;Europe;Stuttgart;Baden-Wuerttemberg;Germany
+556;Europe;Sulzbach Taunus;Saar;Germany
+557;Europe;Suresnes;Hauts de Seine;France
+558;Asia;Sydney;New South Wales;Australia
+559;North America;Tacoma;Washington;United States
+560;North America;Torrance;California;United States
+561;Asia;Townsville;Queensland;Australia
+562;North America;Vancouver;British Columbia;Canada
+563;Europe;Verrieres Le Buisson;Essonne;France
+564;Europe;Versailles;Yveline;France
+565;Europe;W. York;England;United Kingdom
+566;North America;Walla Walla;Washington;United States
+567;Europe;Warrington;England;United Kingdom
+568;Asia;Warrnambool;Victoria;Australia
+569;Europe;Werne;North Rhine-Westphalia;Germany
+570;North America;West Covina;California;United States
+571;North America;Westminster;British Columbia;Canada
+572;Europe;Wokingham;England;United Kingdom
+573;North America;Woodburn;Oregon;United States
+574;Europe;Woolston;England;United Kingdom
+575;North America;Yakima;Washington;United States
+576;Europe;York;England;United Kingdom
+577;North America;Ballard;Washington;United States
+578;North America;Barstow;California;United States
+579;North America;Baytown;Texas;United States
+580;North America;Beaverton;Oregon;United States
+581;North America;Bell Gardens;California;United States
+582;North America;Bellflower;California;United States
+583;North America;Bellingham;Washington;United States
+584;North America;Berkeley;California;United States
+585;Europe;Berkshire;England;United Kingdom
+586;Europe;Berlin;Berlin;Germany
+587;Europe;Billericay;England;United Kingdom
+588;Europe;Birmingham;England;United Kingdom
+590;Europe;Bonn;North Rhine-Westphalia;Germany
+591;Europe;Boulogne-Billancourt;Hauts de Seine;France
+592;Europe;Boulogne-sur-Mer;Pas de Calais;France
+593;North America;Bradenton;Florida;United States
+594;North America;Branch;Minnesota;United States
+595;Europe;Brunswick;Lower Saxony;Germany
+596;Asia;Brisbane;Queensland;Australia
+597;North America;Burien;Washington;United States
+598;North America;Calgary;Alberta;Canada
+599;Asia;Caloundra;Queensland;Australia
+600;North America;Camarillo;California;United States
+601;North America;Canoga Park;California;United States
+602;North America;Carson;California;United States
+603;North America;Casper;Wyoming;United States
+604;North America;Cedar City;Utah;United States
+605;North America;Central Valley;New York;United States
+606;North America;Chandler;Arizona;United States
+607;North America;Cheektowaga;New York;United States
+608;Europe;Cheltenham;England;United Kingdom
+609;North America;Chicago;Illinois;United States
+610;North America;Chula Vista;California;United States
+611;North America;Citrus Heights;California;United States
+612;North America;Clackamas;Oregon;United States
+613;Asia;Cloverdale;South Australia;Australia
+614;North America;College Station;Texas;United States
+615;Europe;Colombes;Hauts de Seine;France
+616;Europe;Colomiers;Garonne (Haute);France
+617;North America;Columbus;Georgia;United States
+618;North America;Columbus;Ohio;United States
+619;North America;Coronado;California;United States
+620;North America;Corvallis;Oregon;United States
+621;Europe;Courbevoie;Hauts de Seine;France
+622;Europe;Croix;Nord;France
+623;Europe;Dresden;Saxony;Germany
+624;Europe;Dunkerque;Nord;France
+625;North America;El Cajon;California;United States
+626;Europe;Erlangen;Bavaria;Germany
+627;North America;Everett;Washington;United States
+628;Asia;Findon;South Australia;Australia
+629;Europe;Frankfurt;Bavaria;Germany
+631;North America;Fremont;California;United States
+632;Asia;Geelong;Victoria;Australia
+633;North America;Glendale;California;United States
+634;Asia;Goulburn;New South Wales;Australia
+635;Europe;Grevenbroich;North Rhine-Westphalia;Germany
+637;Asia;Hawthorne;Queensland;Australia
+638;Europe;High Wycombe;England;United Kingdom
+639;Europe;Hof;Bavaria;Germany
+640;Europe;Ingolstadt;Bavaria;Germany
+641;Europe;Kassel;Hesse;Germany
+642;North America;Kirkland;Washington;United States
+643;North America;La Jolla;California;United States
+644;North America;Lake Oswego;Oregon;United States
+645;North America;Lakewood;California;United States
+646;Asia;Lane Cove;New South Wales;Australia
+647;North America;Langford;British Columbia;Canada
+648;Asia;Lavender Bay;New South Wales;Australia
+649;Europe;Leipzig;Saxony;Germany
+650;Europe;Lille;Nord;France
+651;Europe;Liverpool;England;United Kingdom
+652;North America;Long Beach;California;United States
+653;North America;Los Angeles;California;United States
+654;Europe;Maidenhead;England;United Kingdom
+655;Asia;Malabar;New South Wales;Australia
+656;Asia;Melbourne;Victoria;Australia
+657;Europe;Metz;Moselle;France
+658;North America;Mill Valley;California;United States
+659;Europe;Milton Keynes;England;United Kingdom
+660;North America;Milwaukie;Oregon;United States
+661;Europe;Morangis;Essonne;France
+662;Europe;Hamburg ;Hamburg;Germany
+664;Europe;Mönchengladbach;North Rhine-Westphalia;Germany
+665;North America;N. Vancouver;British Columbia;Canada
+666;Europe;Newcastle upon Tyne;England;United Kingdom
+667;North America;Newport Beach;California;United States
+668;North America;Newton;British Columbia;Canada
+669;Asia;North Sydney;New South Wales;Australia
+670;North America;Novato;California;United States
+671;North America;Oak Bay;British Columbia;Canada
+672;Europe;Orleans;Loiret;France
+673;Europe;Oxon;England;United Kingdom
+674;Europe;Paderborn;North Rhine-Westphalia;Germany
+675;North America;Port Hammond;British Columbia;Canada
+676;Europe;Reading;England;United Kingdom
+677;North America;Redmond;Washington;United States
+678;North America;Renton;Washington;United States
+679;Asia;Rhodes;New South Wales;Australia
+680;Asia;Rockhampton;Queensland;Australia
+681;Europe;Roissy en Brie;Seine et Marne;France
+682;North America;Royal Oak;British Columbia;Canada
+683;Europe;Saarbrücken;Saar;Germany
+684;Europe;Saint Ouen;Charente-Maritime;France
+685;Europe;Saint Ouen;Loir et Cher;France
+686;North America;Salem;Oregon;United States
+687;Europe;Salzgitter;Lower Saxony;Germany
+688;North America;San Diego;California;United States
+689;North America;San Francisco;California;United States
+690;North America;San Gabriel;California;United States
+691;North America;Santa Cruz;California;United States
+692;Asia;Seaford;Victoria;Australia
+693;North America;Seattle;Washington;United States
+694;North America;Sedro Woolley;Washington;United States
+695;North America;Shawnee;British Columbia;Canada
+696;Europe;Solingen;North Rhine-Westphalia;Germany
+697;Asia;South Melbourne;Victoria;Australia
+698;Europe;Stoke-on-Trent;England;United Kingdom
+699;Asia;Sunbury;Victoria;Australia
+700;Europe;Tremblay-en-France;Seine Saint Denis;France
+701;North America;Victoria;British Columbia;Canada
+702;Europe;Villeneuve-d'Ascq;Nord;France
+703;North America;W. Linn;Oregon;United States
+704;Europe;Watford;England;United Kingdom
+705;Europe;West Sussex;England;United Kingdom
+706;Asia;Wollongong;New South Wales;Australia
+707;North America;Woodland Hills;California;United States
+708;Asia;Ashgabat;Ahal Province;Turkmenistan
+709;Asia;Bangkok;Krung Thep;Thailand
+710;Asia;Beijing;Beijing;China
+711;Asia;Bishkek;Chuy Province;Kyrgyzstan
+712;Asia;Busan ;Yeongnam;South Korea
+713;Asia;Canberra;Molonglo;Australia
+714;Asia;Damascus;Damascus;Syria
+715;Asia;Guangzhou;GuangDong;China
+716;Asia;Hong Kong;Hong Kong;China
+717;Asia;Islamabad;Islamabad Capital Territory;Pakistan
+718;Asia;Kolkata ;West Bengal;India
+719;Asia;Kyoto ;Kansai;Japan
+720;Asia;Miyagi;Tohoku;Japan
+721;Asia;Mumbai ;Maharashtra;India
+722;Asia;Nagoya ;Chubu;Japan
+723;Asia;New Delhi;National Capital Territory of Delhi;India
+724;Asia;Osaka ;Kansai;Japan
+725;Asia;Sapporo ;Hokkaido;Japan
+726;Asia;Seoul;Seoul-jikhalsi;South Korea
+727;Asia;Shanghai;Shanghai;China
+728;Asia;Singapore;Singapore;Singapore
+729;Asia;Taipei;Taiwan;Taiwan
+730;Asia;Tehran;Tehran;Iran
+731;Asia;Thimphu;Thimphu District;Bhutan
+732;Asia;Tokyo;Kanto;Japan
+733;Asia;Urumqi;Xinjiang;China
+734;Asia;Yerevan;Armenia;Armenia
+735;Asia;Yokohama ;Kanto;Japan
+736;Europe;Amsterdam;Noord-Holland;the Netherlands
+737;Europe;Athens;Central Greece and Evvoia;Greece 
+738;Europe;Baildon;England ;United Kingdom
+739;Europe;Baumholder;Rhineland-Palatinate;Germany 
+740;Europe;Berne;Bern;Switzerland 
+741;Europe;Bucharest;Bucuresti;Romania 
+742;Europe;Carlisle;England ;United Kingdom
+743;Europe;Cheshire;England ;United Kingdom
+745;Europe;Copenhagen;Staden Kobenhavn;Denmark       
+746;Europe;Dublin;Leinster;Ireland 
+747;Europe;Dusseldorf;North Rhine-Westphalia;Germany 
+748;Europe;Edinburgh;Scotland;United Kingdom
+749;Europe;Firenze;Province of Florence;Italy    
+750;Europe;Giebelstadt;Bavaria;Germany 
+751;Europe;Glasgow;Scotland;United Kingdom
+752;Europe;Hofheim am Taunus;Hesse;Germany 
+753;Europe;Knotty Ash;England ;United Kingdom
+754;Europe;Koln;North Rhine-Westphalia;Germany 
+755;Europe;Lancashire;England ;United Kingdom
+756;Europe;Landstuhl;Rhineland-Palatinate;Germany 
+757;Europe;Lisbon;Lisboa Region;Portugal
+758;Europe;Ljubljana;Ljubljana;Slovenia
+759;Europe;Lyon;Rhone-Alpes ;France
+760;Europe;Madrid;Madrid;Spain
+761;Europe;Manchester;England ;United Kingdom
+762;Europe;Marseille;Provence-Alpes-Cote d'Azur;France
+763;Europe;Milan;Lombardia;Italy    
+764;Europe;Moscow;Moskovskaya oblast;Russia
+765;Europe;Munich;Bavaria;Germany 
+766;Europe;Nantes;Pays de la Loire;France
+767;Europe;Nice;Alpes-Maritimes;France
+768;Europe;Nizhny Novgorod ;Nizhny Novgorod Oblast;Russia
+769;Europe;Bamberg;Bavaria;Germany 
+770;Europe;Ramstein;Rhineland-Palatinate;Germany 
+771;Europe;Roma;Roma;Italy    
+772;Europe;Saint Petersburg;Northwestern;Russia
+773;Europe;Stockholm;Stockholms;Sweden 
+774;Europe;Stockport;England ;United Kingdom
+775;Europe;Strasbourg;Bas-Rhin;France
+776;Europe;Torino;Province of Turin;Italy    
+777;Europe;Toulouse;Midi-Pyrenees;France
+778;Europe;Valletta;Valletta;Malta
+779;Europe;Venezia;Venice;Italy    
+780;Europe;Warsaw;Warszawa;Poland 
+781;Europe;West Yorkshire;England ;United Kingdom
+782;North America;Albany;New York;United States
+783;North America;Alexandria;Virginia;United States
+784;North America;Anchorage;Alaska;United States
+785;North America;Annapolis;Maryland;United States
+786;North America;Appleton;Wisconsin;United States
+787;North America;Arlington;Texas;United States
+788;North America;Atlantic City ;New Jersey;United States
+789;North America;Attleboro;Massachusetts;United States
+790;North America;Aurora;Colorado;United States
+791;North America;Austin;Texas;United States
+792;North America;Back River;Maryland;United States
+793;North America;Bacliff;Texas;United States
+794;North America;Baltimore;Maryland;United States
+795;North America;Bangor;Maine;United States
+796;North America;Bar Harbor;Maine;United States
+797;North America;Bayonne ;New Jersey;United States
+798;North America;Beaumont;Texas;United States
+799;North America;Berthoud;Colorado;United States
+800;North America;Bethesda;Maryland;United States
+801;North America;Bridgeport;Connecticut;United States
+802;North America;Boston;Massachusetts;United States
+803;North America;Boulder;Colorado;United States
+804;North America;Brooklyn;New York;United States
+805;North America;Buffalo;New York;United States
+806;North America;Burlington;Wisconsin;United States
+807;North America;Cape Canaveral;Florida;United States
+808;North America;Cape May;New Jersey;United States
+809;North America;Castle Rock;Colorado;United States
+810;North America;Charleston ;South Carolina;United States
+811;North America;Charlottesville ;Virginia;United States
+812;North America;Cheney;Washington;United States
+813;North America;Cle Elum;Washington;United States
+814;North America;Clifton;New Jersey;United States
+815;North America;Dallas;Texas;United States
+816;North America;Darien;Connecticut;United States
+817;North America;Denton;Texas;United States
+818;North America;Denver;Colorado;United States
+819;North America;Desoto;Texas;United States
+820;North America;East Orange ;New Jersey;United States
+821;North America;East Troy;Wisconsin;United States
+822;North America;Edgerton;Wisconsin;United States
+823;North America;Elmira;New York;United States
+824;North America;Englewood;Colorado;United States
+825;North America;Fall City;Washington;United States
+826;North America;Falmouth;Massachusetts;United States
+827;North America;Fond du Lac;Wisconsin;United States
+828;North America;Fort Atkinson;Wisconsin;United States
+829;North America;Fort Collins;Colorado;United States
+830;North America;Fort Lauderdale;Florida;United States
+831;North America;Fort Worth;Texas;United States
+832;North America;Framingham;Massachusetts;United States
+833;North America;Fredericksburg;Virginia;United States
+834;North America;Georgetown;Texas;United States
+835;North America;Germantown;Maryland;United States
+836;North America;Grand Junction;Colorado;United States
+837;North America;Grand Prairie;Texas;United States
+838;North America;Granger;Washington;United States
+839;North America;Greeley;Colorado;United States
+840;North America;Green Bay;Wisconsin;United States
+841;North America;Greenville;South Carolina;United States
+842;North America;Hackensack ;New Jersey;United States
+843;North America;Hartford;Connecticut;United States
+844;North America;Haverhill;Massachusetts;United States
+845;North America;Hillsboro;Texas;United States
+846;North America;Hingham;Massachusetts;United States
+847;North America;Hoboken ;New Jersey;United States
+848;North America;Holyoke;Massachusetts;United States
+849;North America;Houston;Texas;United States
+850;North America;Howard;Maryland;United States
+851;North America;Humble;Texas;United States
+852;North America;Ithaca;New York;United States
+853;North America;Jacksonville;Florida;United States
+854;North America;Jersey City;New Jersey;United States
+855;North America;Kennebunkport;Maine;United States
+856;North America;Kennewick;Washington;United States
+857;North America;Key West;Florida;United States
+858;North America;La Porte;Texas;United States
+859;North America;Lafayette;Colorado;United States
+860;North America;Lakeland;Florida;United States
+861;North America;Leominster;Massachusetts;United States
+862;North America;Lewiston;Maine;United States
+863;North America;Lewisville;Texas;United States
+864;North America;Litchfield County;Connecticut;United States
+865;North America;Littleton;Colorado;United States
+866;North America;Longview;Texas;United States
+867;North America;Loveland;Colorado;United States
+868;North America;Lowell;Massachusetts;United States
+869;North America;Lynn;Massachusetts;United States
+870;North America;Madison;Wisconsin;United States
+871;North America;Manitowoc;Wisconsin;United States
+872;North America;Marshall;Texas;United States
+873;North America;Martinsville ;Virginia;United States
+874;North America;Menasha;Wisconsin;United States
+875;North America;Miami;Florida;United States
+876;North America;Midland;Texas;United States
+877;North America;Milliken;Colorado;United States
+878;North America;Milwaukee;Wisconsin;United States
+879;North America;Minden;Texas;United States
+880;North America;Montclair ;New Jersey;United States
+881;North America;Montreal;Quebec;Canada
+882;North America;Morristown ;New Jersey;United States
+883;North America;Nantucket;Massachusetts;United States
+884;North America;Naples;Florida;United States
+885;North America;New Bedford;Massachusetts;United States
+886;North America;New Brunswick ;New Jersey;United States
+887;North America;New Castle;Colorado;United States
+888;North America;New Haven ;Connecticut;United States
+889;North America;New London;Connecticut;United States
+890;North America;New York;New York;United States
+891;North America;Newark;New Jersey;United States
+892;North America;Norfolk;Virginia;United States
+893;North America;North Bend;Washington;United States
+894;North America;North Harford;Maryland;United States
+895;North America;Northampton;Massachusetts;United States
+896;North America;Old Saybrook;Connecticut;United States
+897;North America;Orange;Texas;United States
+898;North America;Oregon;Wisconsin;United States
+899;North America;Orlando;Florida;United States
+900;North America;Orono;Maine;United States
+901;North America;Oshkosh;Wisconsin;United States
+902;North America;Oswego;New York;United States
+903;North America;Ottawa;Ontario;Canada
+904;North America;Parker;Colorado;United States
+905;North America;Parkville;Maryland;United States
+906;North America;Pasadena;Texas;United States
+907;North America;Passaic ;New Jersey;United States
+908;North America;Paterson;New Jersey;United States
+909;North America;Pittsfield;Massachusetts;United States
+910;North America;Plano;Texas;United States
+911;North America;Plattsburgh;New York;United States
+912;North America;Poestenkill;New York;United States
+913;North America;Port Washington;Wisconsin;United States
+914;North America;Provincetown;Massachusetts;United States
+915;North America;Queen Anne's County;Maryland;United States
+916;North America;Queens;New York;United States
+917;North America;Quincy;Massachusetts;United States
+918;North America;Racine;Wisconsin;United States
+919;North America;Richardson;Texas;United States
+920;North America;Ridgely;Maryland;United States
+921;North America;Roanoke;Virginia;United States
+922;North America;Rochester;New York;United States
+923;North America;Round Rock;Texas;United States
+924;North America;Russellville;Texas;United States
+925;North America;San Antonio;Texas;United States
+926;North America;Sebring;Florida;United States
+927;North America;Sedalia;Colorado;United States
+928;North America;Sheboygan;Wisconsin;United States
+929;North America;Shreveport;Texas;United States
+930;North America;Snoqualmie;Washington;United States
+931;North America;Somerville;Massachusetts;United States
+932;North America;South Portland;Maine;United States
+933;North America;Spring;Texas;United States
+934;North America;Stoughton;Wisconsin;United States
+935;North America;Sunnyside;Washington;United States
+936;North America;Syracuse;New York;United States
+937;North America;Tallahassee;Florida;United States
+938;North America;Tampa;Florida;United States
+939;North America;Texas City;Texas;United States
+940;North America;Thornton;Colorado;United States
+941;North America;Toppenish;Washington;United States
+942;North America;Toronto;Ontario;Canada
+943;North America;Trenton;New Jersey;United States
+944;North America;Veradale;Washington;United States
+945;North America;Vineland;New Jersey;United States
+946;North America;Virginia Beach;Virginia;United States
+947;North America;Wapato;Washington;United States
+948;North America;Waterbury;Connecticut;United States
+949;North America;Waukesha;Wisconsin;United States
+950;North America;Wheat Ridge;Colorado;United States
+951;North America;Winchester;Virginia;United States
+952;North America;Worcester;Massachusetts;United States
